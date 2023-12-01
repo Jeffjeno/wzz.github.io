@@ -15,9 +15,8 @@ This is Bohan's homepage.
 **Tsinghua University**, Department of Computer Science and Technology, School of Economics and Management  
 _Economics and Finance & Computer Science and Technology (Double degree), Beijing_  
 *Date:* 2022.9 - Present  
-*Details:*  
-- Majoring in the double degree of computer science and finance.
-- GPA of the first year is 3.9/4.0. Got 4.0/4.0 in 16 courses.
+*GPA:* 3.9/4.0. Got 4.0/4.0 in 18/20 academic courses.
+*Selected A/A+ Courses:* Linear Algebra, Calculus A(2), Fundamentals of Programming, Programing and Training, Introduction to Computational Humanity and Social Sciences, English in Sciences (Advanced), etc.
 
 # Internship & Scientific Research Experience
 
