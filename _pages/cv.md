@@ -19,7 +19,7 @@ redirect_from:
 
 # Internship & Scientific Research Experience
 
-**[Quantitative Research Internship](/lyubh.cn/files/itern@china_securities.pdf)**, **China Securities**, Beijing, China  
+**[Quantitative Research Internship](http://lyubh.cn/files/itern@china_securities.pdf)**, **China Securities**, Beijing, China  
 **Date:** 2023.6 - 2023.8  
 **Details:**  
 - Worked on Microsoft Qlib and optimized neural networks and algorithms.
@@ -32,7 +32,7 @@ redirect_from:
 
 # Activities
 
-**[2023 National College Student Mathematical Modeling Contest](/lyubh.cn/files/MMC_CN@2023)**, Beijing First Prize, Beijing  
+**[2023 National College Student Mathematical Modeling Contest](http://lyubh.cn/files/MMC_CN@2023)**, Beijing First Prize, Beijing  
 **Date:** 2023.10  
 **Awarded by:** Beijing Education Commission, Beijing Normal University  
 **Details:** Received the first prize in the Beijing area in the National College Student Mathematical Modeling Contest.
