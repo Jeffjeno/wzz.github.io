@@ -29,6 +29,7 @@ redirect_from:
 **Date:** 2023.7 - Present  
 **Details:**  
 - Designing a large language model as Agent that can utilize complex external tools.
+- Member of **[XAgent](https://github.com/OpenBMB/XAgent) Team**.
 
 # Activities
 

@@ -31,6 +31,7 @@ This is Bohan's homepage.
 **Date:** 2023.7 - Present  
 **Works:**  
 - Designing a large language model as Agent that can utilize complex external tools.
+- Member of **[XAgent](https://github.com/OpenBMB/XAgent) Team**.
 
 # Activities
 
