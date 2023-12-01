@@ -19,13 +19,13 @@ redirect_from:
 
 # Internship & Scientific Research Experience
 
-**[Quantitative Research Internship](/lyubh.cn/files/itern@china_securities.pdf)**, China Securities, Beijing, China  
+**[Quantitative Research Internship](/lyubh.cn/files/itern@china_securities.pdf)**, **China Securities**, Beijing, China  
 **Date:** 2023.6 - 2023.8  
 **Details:**  
 - Worked on Microsoft Qlib and optimized neural networks and algorithms.
 - Increased back test revenue of the models and improved its efficiency.
 
-**Internship**, Tsinghua University NLP Lab, Beijing, China  
+**Internship**, **[Tsinghua University NLP Lab](https://nlp.csai.tsinghua.edu.cn)**, Beijing, China  
 **Date:** 2023.7 - Present  
 **Details:**  
 - Designing a large language model as Agent that can utilize complex external tools.
