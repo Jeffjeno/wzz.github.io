@@ -12,7 +12,7 @@ redirect_from:
 # Education
 
 **Tsinghua University**, Department of Computer Science and Technology, School of Economics and Management  
-**Major:** Economics and Finance & Computer Science and Technology (Double degree)
+**Major:** Economics and Finance & Computer Science and Technology (Double degree)  
 **Date:** 2022.9 - Present  
 **GPA:** 3.9/4.0. Got 4.0/4.0 in 18/20 academic courses.  
 **Selected A/A+ Courses:** Linear Algebra, Calculus A(2), Fundamentals of Programming, Programing and Training, Introduction to Computational Humanity and Social Sciences, English in Sciences (Advanced), etc
