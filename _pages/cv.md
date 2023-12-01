@@ -33,7 +33,7 @@ redirect_from:
 
 # Activities
 
-**[2023 National College Student Mathematical Modeling Contest](http://lyubh.cn/files/MMC_CN@2023)**, Beijing First Prize, Beijing  
+**[2023 National College Student Mathematical Modeling Contest](http://lyubh.cn/files/MMC_CN@2023.pdf)**, Beijing First Prize, Beijing  
 **Date:** 2023.10  
 **Awarded by:** Beijing Education Commission, Beijing Normal University  
 **Details:** Received the first prize in the Beijing area in the National College Student Mathematical Modeling Contest.
