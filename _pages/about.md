@@ -45,7 +45,7 @@ This is Bohan's homepage.
 **Details:** Led the team to win the third place.
 
 **Discover Citadel | Citadel Securities**, Member, Hongkong, China  
-**Date:** 2023.1 - 2023.2  
+**Date:** 2023.4
 **Details:** Learned about market making and different positions in a quantitative company.
 
 # Other Information

@@ -51,11 +51,11 @@ redirect_from:
 **Details:** Led the team to complete a complicated game.
 
 **Discover Citadel | Citadel Securities**, Member, Hongkong, China  
-**Date:** 2023.1 - 2023.2  
+**Date:** 2023.4
 **Details:** Learned about market making and different positions in a quantitative company.
 
 **Intelligent Agent Contest**, Participant, Tsinghua University, Beijing, China  
-**Date:** 2023.1 - 2023.2  
+**Date:** 2023.4 - 2023.5
 **Details:** Designed AI for battles and entered the top 50.
 
 # Other Information
