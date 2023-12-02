@@ -1,14 +1,4 @@
 ---
-title: 'Blog Post number 2'
-date: 2013-08-14
-permalink: /posts/2013/08/blog-post-2/
-tags:
-  - cool posts
-  - category1
-  - category2
----
-
-<!-- ---
 title: 'Diffusion Models in Time Series Applications'
 date: 2023-08-11
 permalink: /posts/2023/08/Diff_in_Time/
@@ -16,7 +6,7 @@ tags:
   - Diffusion Model
   - Time Series Forecasting
   - Time Series Generating
---- -->
+---
 
 # Diffusion Models in Time Series Applications
 
