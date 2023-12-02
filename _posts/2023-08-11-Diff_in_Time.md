@@ -35,8 +35,7 @@ p(x_t|h_{t-1})
 $$
 where $h_{t-1}$ encodes historical information.
 
-| <img src="https://cdn.jsdelivr.net/gh/Imbernoulli/mdimages@main/%E6%88%AA%E5%B1%8F2023-08-22%2013.09.43.png" alt="截屏2023-08-22 13.09.43" style="zoom: 40%;" /> | <img src="https://cdn.jsdelivr.net/gh/Imbernoulli/mdimages@main/%E6%88%AA%E5%B1%8F2023-08-22%2013.10.28.png" alt="截屏2023-08-22 13.10.28" style="zoom: 25%;" /> |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+<img src="https://cdn.jsdelivr.net/gh/Imbernoulli/mdimages@main/%E6%88%AA%E5%B1%8F2023-08-22%2013.09.43.png" alt="截屏2023-08-22 13.09.43" style="zoom: 40%;" />  <img src="https://cdn.jsdelivr.net/gh/Imbernoulli/mdimages@main/%E6%88%AA%E5%B1%8F2023-08-22%2013.10.28.png" alt="截屏2023-08-22 13.10.28" style="zoom: 25%;" />
 
 TimeGrad is an autoregressive model for multivariate time series forecasting based on denoising diffusion probabilistic models (DDPMs). 
 
@@ -48,7 +47,11 @@ $$
 q(X_0^{t_0:T}|X_0^{1:t_0-1}) = \prod_{t=t_0}^T p_\theta(x_0^t|h_{t-1})
 $$
 
-where $h_t = \text{RNN}_\theta(concat(x_t^0, c_t), h_{t-1})$ encodes historical information.
+where 
+$$
+h_t = \text{RNN}_\theta(concat(x_t^0, c_t), h_{t-1})
+$$
+ encodes historical information.
 
 **3. Training:**
 
@@ -105,7 +108,8 @@ $$
 - Approximates 
 $$
 \nabla_{x_t}\log q_k(x_t|h_t)
-$$ with neural network $s_\theta(x_t, h_t, k)$
+$$
+ with neural network $s_\theta(x_t, h_t, k)$
 
 **Historical Information**
 
@@ -123,8 +127,7 @@ $$
 L_t(\theta) =\arg\min_{\theta}\mathbb{E}_{t_s}[\lambda(t_s)\mathbb{E}_{x_t^0,x_{t_s}^t}[||s_\theta(x_{t_s}^t, h_t, t_s) - \nabla_{x_{t_s}^t} \log p_{t_s}^0(x_{t_s}^t|x_t^0)||_2^2]]
 $$
 
-| <img src="https://cdn.jsdelivr.net/gh/Imbernoulli/mdimages@main/%E6%88%AA%E5%B1%8F2023-08-22%2010.05.31.png" alt="截屏2023-08-22 10.05.31" style="zoom:50%;" /> | <img src="https://cdn.jsdelivr.net/gh/Imbernoulli/mdimages@main/%E6%88%AA%E5%B1%8F2023-08-22%2010.05.06.png" alt="截屏2023-08-22 10.05.06" style="zoom:50%;" /> |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+<img src="https://cdn.jsdelivr.net/gh/Imbernoulli/mdimages@main/%E6%88%AA%E5%B1%8F2023-08-22%2010.05.31.png" alt="截屏2023-08-22 10.05.31" style="zoom:50%;" />  <img src="https://cdn.jsdelivr.net/gh/Imbernoulli/mdimages@main/%E6%88%AA%E5%B1%8F2023-08-22%2010.05.06.png" alt="截屏2023-08-22 10.05.06" style="zoom:50%;" /> 
 
 **Generation**
 
@@ -208,11 +211,14 @@ $$
 
 **Generation:** 
 
-- Sample from the learned $p_\phi$ and $p_\theta$. Samples 
+- Sample from the learned $p_\phi$ and $p_\theta$. Samples
+
 $$
 Z \sim p_\phi(Z|X)
 $$
- and generates 
+
+and generates 
+
 $$
 \hat{Y} \sim p_\theta(\hat{Y}|Z)
 $$
