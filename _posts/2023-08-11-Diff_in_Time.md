@@ -329,7 +329,19 @@ $$
 $$
 The **encoder** and **decoder** are responsible for mapping time-series data to and from a latent space. In this context, let's denote the data space as $\mathcal{X}$ and the latent space as $\mathcal{H}$. The encoder function $e$ maps data from $\mathcal{X}$ to $\mathcal{H}$, while the decoder function $d$ performs the reverse mapping. The encoding and decoding process is defined recursively as follows:
 
-Here, $\mathbf{x}_{1:T}$ represents a time-series sample of length $T$, $\mathbf{x}_t$ is an observation at time $t$ in the sequence, and $\mathbf{h}_{1:T}$ are the corresponding embedded vectors. The encoder and decoder are implemented using recurrent neural networks (RNNs).
+Here, 
+$$
+\mathbf{x}_{1:T}
+$$
+represents a time-series sample of length $T$, 
+$$
+\mathbf{x}_t
+$$
+is an observation at time $t$ in the sequence, and 
+$$
+\mathbf{h}_{1:T}
+$$
+are the corresponding embedded vectors. The encoder and decoder are implemented using recurrent neural networks (RNNs).
 
 **Conditional Score Network**
 
