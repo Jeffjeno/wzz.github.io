@@ -10,7 +10,7 @@ tags:
 
 A survey for Diffusion Models in Time Series Applications.
 
-Diffusion Models in Time Series Applications
+Diffusion Models in Time Series Applications[^1]
 ======
 
 ## Time Series Forecasting
@@ -27,7 +27,7 @@ $$
 
 ### Models
 
-#### TimeGrad: Based on DDPM, uses RNN to encode historical information.
+#### TimeGrad: Based on DDPM, uses RNN to encode historical information.[^2]
 
 TimeGrad is based on **denoising diffusion probabilistic models (DDPMs)**. It models the conditional distribution 
 $$
@@ -79,7 +79,7 @@ $$
 
 where $z \sim \mathcal{N}(0, I)$. The sampling process starts from Gaussian noise and iteratively denoises using the learned reverse process. The mean prediction is corrected using the noise prediction network $ε_θ$. Adding Gaussian noise z simulates one step of the reverse Markov chain.
 
-#### ScoreGrad: Based on SDE, also uses RNN.
+#### ScoreGrad: Based on SDE, also uses RNN.[^3]
 
 ScoreGrad is based on **continuous energy-based generative models**. It models the conditional distribution 
 $$
@@ -139,7 +139,7 @@ $$
 
 The key is continuous diffusion for flexibility and encoding history to capture temporal dependencies.
 
-#### D^3^VAE: Bidirectional VAE + Denoising Score Matching.
+#### D^3^VAE: Bidirectional VAE + Denoising Score Matching.[^4]
 
 D3VAE is based on a **bidirectional variational autoencoder (BVAE)** and integrates diffusion, denoising, and disentanglement.
 
@@ -225,7 +225,7 @@ $$
 
 - Achieves state-of-the-art results on time series forecasting
 
-#### DSPD/CSPD: Model time series as values of a continuous function, with continuous Gaussian noise.
+#### DSPD/CSPD: Model time series as values of a continuous function, with continuous Gaussian noise.[^5]
 
 #### ![截屏2023-08-22 10.42.08](https://cdn.jsdelivr.net/gh/Imbernoulli/mdimages@main/%E6%88%AA%E5%B1%8F2023-08-22%2010.42.08.png)
 
@@ -312,7 +312,7 @@ Learn the joint probability distribution: $p(x_{1:T}^0)$.
 
 ### Model
 
-#### TSGM: Encode to latent space, sample with conditional score matching network, then decode.
+#### TSGM: Encode to latent space, sample with conditional score matching network, then decode.[^6]
 
 TSGM is a generative model for time-series data and is composed of three networks: an encoder, a decoder, and a conditional score network. The overall process involves embedding time-series data into a latent space, training a conditional score network, and generating fake time-series samples.
 
@@ -394,3 +394,16 @@ Solve reverse-time SDE, sample latent states, then decode to time series.
 
 The combination of these components ensures the generated data captures the characteristics of real-world time-series data, making it valuable for various applications.
 
+### Reference
+
+[^1]: [Lequan Lin, Zhengkun Li, Ruikun Li, Xuliang Li, Junbin Gao: Diffusion Models for Time Series Applications: A Survey](https://arxiv.org/abs/2305.00624)
+
+[^2]: Rasul K, Seward C, Schuster I, et al., 2021a. Autoregressive denoising diffusion models for multivariate probabilistic time series forecasting. International Conference on Machine Learning, p.8857-8868.
+
+[^3]: Yan T, Zhang H, Zhou T, et al., 2021. Scoregrad: Multivariate probabilistic time series fore-casting with continuous energy-based generative models. arXiv preprint arXiv:210610121, 1.
+
+[^4]: Li Y, Lu X, Wang Y, et al., 2022. Generative time series forecasting with diffusion, denoise, and disentanglement. Advances in Neural Information Processing Systems, 35:23009-23022.
+
+[^5]: Biloš M, Rasul K, Schneider A, et al., 2022. Modeling temporal data as continuous functions with process diffusion. arXiv preprint arXiv:221102590, 1.
+
+[^6]: Lim H, Kim M, Park S, et al., 2023. Regular time-series generation using sgm. arXiv preprint arXiv:230108518, 1.
