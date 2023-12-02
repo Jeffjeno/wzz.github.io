@@ -8,8 +8,10 @@ tags:
   - Time Series Generating
 ---
 
-# Diffusion Models in Time Series Applications
+A survey for Diffusion Models in Time Series Applications.
 
+Diffusion Models in Time Series Applications
+======
 
 ## Time Series Forecasting
 
@@ -17,13 +19,21 @@ tags:
 
 Given historical multivariate time series $X_c^0=\{x_1^0, x_2^0, ..., x_{t_0-1}^0\}$, the goal is to predict future time series $X_p^0=\{x_{t_0}^0, x_{t_0+1}^0, ..., x_T^0\}$. 
 
-Learn the conditional probability distribution: $q(X_p^0|X_c^0) = \prod_{t=t_0}^T q(x_t^0|X_c^0)$.
+Learn the conditional probability distribution: 
+$$
+q(X_p^0|X_c^0) = \prod_{t=t_0}^T q(x_t^0|X_c^0)
+$$
+
 
 ### Models
 
 #### TimeGrad: Based on DDPM, uses RNN to encode historical information.
 
-TimeGrad is based on **denoising diffusion probabilistic models (DDPMs)**. It models the conditional distribution $p(x_t|h_{t-1})$ where $h_{t-1}$ encodes historical information.
+TimeGrad is based on **denoising diffusion probabilistic models (DDPMs)**. It models the conditional distribution 
+$$
+p(x_t|h_{t-1})
+$$
+where $h_{t-1}$ encodes historical information.
 
 | <img src="https://cdn.jsdelivr.net/gh/Imbernoulli/mdimages@main/%E6%88%AA%E5%B1%8F2023-08-22%2013.09.43.png" alt="截屏2023-08-22 13.09.43" style="zoom: 40%;" /> | <img src="https://cdn.jsdelivr.net/gh/Imbernoulli/mdimages@main/%E6%88%AA%E5%B1%8F2023-08-22%2013.10.28.png" alt="截屏2023-08-22 13.10.28" style="zoom: 25%;" /> |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -68,7 +78,11 @@ where $z \sim \mathcal{N}(0, I)$. The sampling process starts from Gaussian nois
 
 #### ScoreGrad: Based on SDE, also uses RNN.
 
-ScoreGrad is based on **continuous energy-based generative models**. It models the conditional distribution $p(x_t|h_{t-1})$ where $h_{t-1}$ encodes historical information.
+ScoreGrad is based on **continuous energy-based generative models**. It models the conditional distribution 
+$$
+p(x_t|h_{t-1})
+$$
+where $h_{t-1}$ encodes historical information.
 
 ![截屏2023-08-22 10.02.49](https://cdn.jsdelivr.net/gh/Imbernoulli/mdimages@main/截屏2023-08-22 10.02.49.png)
 
@@ -88,7 +102,10 @@ $$
 dx_t = [f(x_t, k) - \frac{1}{2}g(k)^2\nabla_{x_t}\log q_k(x_t|h_t)]dk + g(k)d\tilde{w}
 $$
 
-- Approximates $\nabla_{x_t}\log q_k(x_t|h_t)$ with neural network $s_\theta(x_t, h_t, k)$
+- Approximates 
+$$
+\nabla_{x_t}\log q_k(x_t|h_t)
+$$ with neural network $s_\theta(x_t, h_t, k)$
 
 **Historical Information**
 
@@ -161,7 +178,11 @@ Where $\tilde{\alpha}_k' > \tilde{\alpha}_k$, increase noise level for PREDICTIO
 
 **Bidirectional VAE:** 
 
-Learn $p_\phi(Z|x_{1:t_0-1}^0)$ to map CONTEXT to latent space.  
+Learn 
+$$
+p_\phi(Z|x_{1:t_0-1}^0)
+$$
+ to map CONTEXT to latent space.  
 
 Decode latent representations to predict disturbed PREDICTION window $\hat{x}_{t_0:T}^k$.
 
@@ -187,7 +208,14 @@ $$
 
 **Generation:** 
 
-- Sample from the learned $p_\phi$ and $p_\theta$. Samples $Z \sim p_\phi(Z|X)$ and generates $\hat{Y} \sim p_\theta(\hat{Y}|Z)$
+- Sample from the learned $p_\phi$ and $p_\theta$. Samples 
+$$
+Z \sim p_\phi(Z|X)
+$$
+ and generates 
+$$
+\hat{Y} \sim p_\theta(\hat{Y}|Z)
+$$
 
 - Achieves state-of-the-art results on time series forecasting
 
@@ -195,9 +223,15 @@ $$
 
 #### ![截屏2023-08-22 10.42.08](https://cdn.jsdelivr.net/gh/Imbernoulli/mdimages@main/%E6%88%AA%E5%B1%8F2023-08-22%2010.42.08.png)
 
-1. Forward process: $q(X^k|X^0) = \mathcal{N}(\sqrt{\tilde{\alpha}_k}X^0, (1-\tilde{\alpha}_k)\Sigma)$
+1. Forward process: 
+$$
+q(X^k|X^0) = \mathcal{N}(\sqrt{\tilde{\alpha}_k}X^0, (1-\tilde{\alpha}_k)\Sigma)
+$$
 
-2. Reverse process: $p_\theta(X^{k-1}|X^k) = \mathcal{N}(\mu_\theta(X^k, k), (1-\alpha_k)\Sigma)$
+2. Reverse process: 
+$$
+p_\theta(X^{k-1}|X^k) = \mathcal{N}(\mu_\theta(X^k, k), (1-\alpha_k)\Sigma)
+$$
 3. Training: Minimize squared error.
 4. Generation: Sample reverse process step-by-step.
 
@@ -218,15 +252,21 @@ Two options for the stochastic process noise are:
 
 The forward diffusion process is defined as:
 
-- $q(X_n | X_{n-1}) = N(\sqrt{1 - β_n}X_{n-1}, β_nΣ)$
+$$
+q(X_n | X_{n-1}) = N(\sqrt{1 - β_n}X_{n-1}, β_nΣ)
+$$
 
-- $q(X_n | X_0) = N(\sqrt{α_n} X_0, (1 - α_n)Σ)$
+$$
+q(X_n | X_0) = N(\sqrt{α_n} X_0, (1 - α_n)Σ)
+$$
 
 where $α_n = 1 - β_n$ and $Σ(t)$ is the covariance matrix.
 
 The reverse generative model learns to invert this diffusion process by predicting the noise $ɛ$ that was added to the original $X_0$. This is parameterized as:
 
-- $p(X_{n-1} | X_n) = N(μ_θ(X_n, t, n), β_nΣ)$
+$$
+p(X_{n-1} | X_n) = N(μ_θ(X_n, t, n), β_nΣ)
+$$
 
 where $μ_θ$ is a neural network predicting the noise. The loss function is the MSE between predicted and true noise.
 
