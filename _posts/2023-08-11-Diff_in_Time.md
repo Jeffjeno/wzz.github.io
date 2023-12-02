@@ -8,7 +8,7 @@ tags:
   - Time Series Generating
 ---
 
-A survey for Diffusion Models in Time Series Applications.
+A survey for Diffusion Models in Time Series Applications. It is one of my reports I was a summer intern at China Securities.
 
 Diffusion Models in Time Series Applications[^1]
 ======
