@@ -227,7 +227,7 @@ $$
 
 #### DSPD/CSPD: Model time series as values of a continuous function, with continuous Gaussian noise.[^5]
 
-#### ![截屏2023-08-22 10.42.08](https://cdn.jsdelivr.net/gh/Imbernoulli/mdimages@main/%E6%88%AA%E5%B1%8F2023-08-22%2010.42.08.png)
+![截屏2023-08-22 10.42.08](https://cdn.jsdelivr.net/gh/Imbernoulli/mdimages@main/%E6%88%AA%E5%B1%8F2023-08-22%2010.42.08.png)
 
 1. Forward process: 
 $$
@@ -316,7 +316,7 @@ Learn the joint probability distribution: $p(x_{1:T}^0)$.
 
 TSGM is a generative model for time-series data and is composed of three networks: an encoder, a decoder, and a conditional score network. The overall process involves embedding time-series data into a latent space, training a conditional score network, and generating fake time-series samples.
 
-#### ![截屏2023-08-22 11.08.59](https://cdn.jsdelivr.net/gh/Imbernoulli/mdimages@main/%E6%88%AA%E5%B1%8F2023-08-22%2011.08.59.png)
+![截屏2023-08-22 11.08.59](https://cdn.jsdelivr.net/gh/Imbernoulli/mdimages@main/%E6%88%AA%E5%B1%8F2023-08-22%2011.08.59.png)
 
 **Encoder and Decoder:** 
 
