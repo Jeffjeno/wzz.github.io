@@ -30,6 +30,7 @@ redirect_from:
 **Details:**  
 - Designing a large language model as Agent that can utilize complex external tools.
 - Member of **[XAgent](https://github.com/OpenBMB/XAgent) Team**.
+- First Author of **[GitAgent](https://arxiv.org/abs/2312.17294)**.
 
 # Activities
 
