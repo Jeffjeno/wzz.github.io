@@ -4,8 +4,8 @@ title:  "Exploring Diffusion Models’ Corruption Stage in Few-Shot Fine-tuning 
 date:   2024-05-30 00:00:00 +00:00
 image: /images/BNN.png
 categories: research
-author: "Xiaoyu Wu*, Jiaru Zhang*, Yang Hua, Bohan Lyu, Hao Wang, Tao Song, Haibing Guan"
-authors: "Xiaoyu Wu*, Jiaru Zhang*, Yang Hua, Bohan Lyu, Hao Wang, Tao Song, Haibing Guan"
+author: "Xiaoyu Wu*, Jiaru Zhang*, Yang Hua, <b>Bohan Lyu</b>, Hao Wang, Tao Song, Haibing Guan"
+authors: "Xiaoyu Wu*, Jiaru Zhang*, Yang Hua, <b>Bohan Lyu</b>, Hao Wang, Tao Song, Haibing Guan"
 venue: "Under Peer Review"
 arxiv: https://arxiv.org/pdf/2405.19931
 code: 
