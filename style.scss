@@ -1,7 +1,4 @@
----
----
-
-//
+--- --- //
 // IMPORTS
 //
 
@@ -17,9 +14,17 @@ a {
   text-decoration: none;
 }
 
-b {
-  color: #595c5b;
-  text-decoration: none;
+.toggleIcon {
+  cursor: pointer;
+  user-select: none;
+}
+
+.open .toggleIcon {
+  transform: rotate(0deg);
+}
+
+.closed .toggleIcon {
+  transform: rotate(-90deg);
 }
 
 a:focus,
@@ -52,7 +57,7 @@ h2 {
   font-weight: normal;
   padding: 0px;
   margin: 0px;
-  display:inline; 
+  display: inline;
 }
 
 h3 {
@@ -62,7 +67,7 @@ h3 {
   font-display: auto;
   padding: 0px;
   margin: 0px;
-  display:inline; 
+  display: inline;
 }
 
 h1 {

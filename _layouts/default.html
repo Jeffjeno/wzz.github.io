@@ -6,7 +6,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-E00L9PT3V9');
@@ -20,28 +20,40 @@
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css">
 
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <table
+    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tr style="padding:0px">
       <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table
+          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr style="padding:0px">
             <td style="padding:2.5%;width:60%;vertical-align:middle">
               <h1>
                 Bohan Lyu
               </h1>
               <p>
-                I am an undergruduate at <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>, persuing a dual degree of Computer Science and Economics. I am a researcher at <a href="https://nlp.csai.tsinghua.edu.cn">Tsinghua NLP</a> Lab and <a href="https://github.com/OpenBMB">OpenBMB</a>, advised by <a href="https://nlp.csai.tsinghua.edu.cn/~lzy/">Prof. Zhiyuan Liu</a>. 
+                I am an undergruduate at <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>, persuing a
+                dual degree of Computer Science and Economics. I am a researcher at <a
+                  href="https://nlp.csai.tsinghua.edu.cn">Tsinghua NLP</a> Lab and <a
+                  href="https://github.com/OpenBMB">OpenBMB</a>, advised by <a
+                  href="https://nlp.csai.tsinghua.edu.cn/~lzy/">Prof. Zhiyuan Liu</a>.
               </p>
               <p>
-                I interned as a quantative researcher at <a href="https://www.group.citic/en/Diversified_Portfolio/Finance/Other_Financial/" style="color: #595c5b;">China Securities</a> in 2023 but found my interest in fundamental research. Then I became my research on LLM-based Agents and multimodal learning. I was nominated as reviewer of <a href="https://llmagents.github.io">LLMAgents@ICLR2024</a> soon after this journey.
+                I interned as a quantative researcher at <a
+                  href="https://www.group.citic/en/Diversified_Portfolio/Finance/Other_Financial/"
+                  style="color: #595c5b;">China Securities</a> in 2023 but found my interest in fundamental research.
+                Then I became my research on LLM-based Agents and multimodal learning. I was nominated as reviewer of <a
+                  href="https://llmagents.github.io">LLMAgents@ICLR2024</a> soon after this journey.
               </p>
               <p>
-                <strong>I look for CS PhD opportunity in 2026 Fall.</strong> Any collaboration or discussion is welcome, whether from seniors or peers. Feel free to reach out to me!
+                <strong>I look for CS PhD opportunity in 2026 Fall.</strong> Any collaboration or discussion is welcome,
+                whether from seniors or peers. Feel free to reach out to me!
               </p>
               <p style="text-align:center">
                 <a target="_blank" href="https://mailhide.io/e/B8TyS"> Email</a> &nbsp;/&nbsp;
@@ -54,19 +66,32 @@
               <img style="width:100%;max-width:100%" alt="profile photo" src="images/me.jpg">
             </td>
           </tr>
+          <tr>
+            <td colspan="2" style="padding:2.5%">
+              <div onclick="toggleContactInfo()">
+                <span class="toggleIcon closed">&#9654;</span> Contact Info
+              </div>
+              <div id="contactInfo" style="display: none; padding: 10px; background-color: #f9f9f9;">
+                <p>WeChat: 13120040612</p>
+                <p>Email: <a href="mailto:lyubh22@gmail.com">lyubh22@gmail.com</a></p>
+              </div>
+            </td>
+          </tr>
         </table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table
+          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research</h2>
+              <h2>Research <span style="font-size: 14px;">(* indicates equal contribution)</span></h2>
               <p>
                 I'm interested in Deep Learning, Natural Language Processing, Autonomous Agents and AI4Science.
               </p>
             </td>
           </tr>
         </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table
+          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
@@ -260,7 +285,19 @@
       </td>
     </tr>
   </table>
+  <script>
+    function toggleContactInfo() {
+      var contactInfo = document.getElementById('contactInfo');
+      var icon = document.querySelector('.toggleIcon');
+      if (contactInfo.style.display === 'none') {
+        contactInfo.style.display = 'block';
+        icon.className = 'toggleIcon open';
+      } else {
+        contactInfo.style.display = 'none';
+        icon.className = 'toggleIcon closed';
+      }
+    }
+  </script>
 </body>
 
 </html>
-
