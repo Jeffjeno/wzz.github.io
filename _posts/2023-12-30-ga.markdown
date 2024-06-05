@@ -11,4 +11,4 @@ arxiv: https://arxiv.org/abs/2312.17294
 code: 
 website: 
 ---
-We apply Bayesian Neural Networks (BNNs) on Diffusion Models (DMs) with variational inference to implicitly broaden the learned distribution, and present that the learning target of the BNNs can be naturally regarded as an expectation of the diffusion loss and a further regularization with the pretrained DMs.
+Developed an autonomous agent that leverages GitHub repositories to extend its capabilities to address diverse user queries. Introduced a new agent architecture that achieved SOTA performance on GitBench.
