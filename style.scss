@@ -1,4 +1,7 @@
---- --- //
+---
+---
+
+//
 // IMPORTS
 //
 
@@ -12,19 +15,6 @@
 a {
   color: #8e27d7;
   text-decoration: none;
-}
-
-.toggleIcon {
-  cursor: pointer;
-  user-select: none;
-}
-
-.open .toggleIcon {
-  transform: rotate(0deg);
-}
-
-.closed .toggleIcon {
-  transform: rotate(-90deg);
 }
 
 a:focus,
@@ -57,7 +47,7 @@ h2 {
   font-weight: normal;
   padding: 0px;
   margin: 0px;
-  display: inline;
+  display:inline; 
 }
 
 h3 {
@@ -67,7 +57,7 @@ h3 {
   font-display: auto;
   padding: 0px;
   margin: 0px;
-  display: inline;
+  display:inline; 
 }
 
 h1 {
