@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "GitAgent: Facilitating Autonomous Agent with GitHub by Tool Extension"
+date:   2023-12-30 00:00:00 +00:00
+image: /images/GA.png
+categories: research
+author: "Bohan Lyu*, Xin Cong*, Heyang Yu, Pan Yang, Yujia Qin, Yining Ye, Yaxi Lu, Zhong Zhang, Yukun Yan, Yankai Lin, Zhiyuan Liu, Maosong Sun"
+authors: "Bohan Lyu*, Xin Cong*, Heyang Yu, Pan Yang, Yujia Qin, Yining Ye, Yaxi Lu, Zhong Zhang, Yukun Yan, Yankai Lin, Zhiyuan Liu, Maosong Sun"
+venue: "Under Peer Review"
+arxiv: https://arxiv.org/abs/2312.17294
+code: 
+website: 
+---
+We apply Bayesian Neural Networks (BNNs) on Diffusion Models (DMs) with variational inference to implicitly broaden the learned distribution, and present that the learning target of the BNNs can be naturally regarded as an expectation of the diffusion loss and a further regularization with the pretrained DMs.
