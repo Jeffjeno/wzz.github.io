@@ -6,7 +6,7 @@ image: /images/VS.png
 categories: research
 author: "Xuan He*, Dongfu Jiang*, Ge Zhang, Max Ku, Achint Soni, Sherman Siu, Haonan Chen, Abhraneil Chandra, Ziyan Jiang, Aaran Arulraj, Kai Wang, Quy Duc Do, Yuansheng Ni, Bohan Lyu, Yaswanth Narsupalli, Rongqi Fan, Zhiheng Lyu, Yuchen Lin, Wenhu Chen"
 authors: "Xuan He*, Dongfu Jiang*, Ge Zhang, Max Ku, Achint Soni, Sherman Siu, Haonan Chen, Abhraneil Chandra, Ziyan Jiang, Aaran Arulraj, Kai Wang, Quy Duc Do, Yuansheng Ni, Bohan Lyu, Yaswanth Narsupalli, Rongqi Fan, Zhiheng Lyu, Yuchen Lin, Wenhu Chen"
-venue: "Under Peer Review"
+venue: "EMNLP (Main)"
 arxiv: https://arxiv.org/pdf/2406.15252
 code: 
 website: https://huggingface.co/spaces/Mantis-VL/VideoScore
