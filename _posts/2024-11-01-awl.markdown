@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Adapting While Learning: Grounding LLMs for Scientific Problems with Intelligent Tool Usage Adaptation"
+date:   2024-11-01 00:00:00 +00:00
+image: /images/awl.png
+categories: research
+author: "Bohan Lyu*, Yadi Cao*, Duncan Watson-Parris, Leon Bergen, Taylor Berg-Kirkpatrick, Rose Yu"
+authors: "Bohan Lyu*, Yadi Cao*, Duncan Watson-Parris, Leon Bergen, Taylor Berg-Kirkpatrick, Rose Yu"
+venue: "Preprint"
+arxiv: 
+code: 
+website: 
+---
+This work proposes a fine-tuning method where LLMs internalize tool-generated solutions (World Knowledge Distillation) and learn to switch between direct answers and tool use for complex problems (Tool Usage Adaptation). It outperforms GPT-4 and Claude-3.5 across six scientific benchmarks.
