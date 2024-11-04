@@ -7,7 +7,7 @@ categories: research
 author: "Bohan Lyu*, Yadi Cao*, Duncan Watson-Parris, Leon Bergen, Taylor Berg-Kirkpatrick, Rose Yu"
 authors: "Bohan Lyu*, Yadi Cao*, Duncan Watson-Parris, Leon Bergen, Taylor Berg-Kirkpatrick, Rose Yu"
 venue: "Preprint"
-arxiv: 
+arxiv: https://arxiv.org/abs/2411.00412
 code: 
 website: 
 ---
