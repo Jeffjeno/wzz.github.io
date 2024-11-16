@@ -99,6 +99,26 @@ span.highlight {
   background-color: #d5f9ff;
 }
 
+.paper-row {
+  transition: all 0.3s ease;
+}
+
+.unselected-paper {
+  display: none;
+}
+
+#expandBtn {
+  padding: 5px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+}
+
+#expandBtn:hover {
+  background: #f0f0f0;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 //@import "highlights";
