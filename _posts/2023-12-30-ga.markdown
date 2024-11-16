@@ -10,5 +10,6 @@ venue: "Under Peer Review"
 arxiv: https://arxiv.org/abs/2312.17294
 code: 
 website: 
+selected: true
 ---
 Developed an autonomous agent that leverages GitHub repositories to extend its capabilities to address diverse user queries. Introduced a new agent architecture that achieved SOTA performance on SciAct.

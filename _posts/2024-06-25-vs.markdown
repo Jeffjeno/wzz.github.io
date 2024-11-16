@@ -10,5 +10,6 @@ venue: "EMNLP (Main)"
 arxiv: https://arxiv.org/pdf/2406.15252
 code: 
 website: https://huggingface.co/spaces/Mantis-VL/VideoScore
+selected: false
 ---
 We release VIDEOFEEDBACK, the first large-scale dataset containing human-provided multi-aspect score over 37.6K synthesized videos from 11 existing video generative models. We train VIDEOSCORE based on VIDEOFEEDBACK to enable automatic video quality assessment.
