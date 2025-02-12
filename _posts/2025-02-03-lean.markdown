@@ -7,7 +7,7 @@ categories: research
 author: "Yong Lin*, Shange Tang*, <b>Bohan Lyu</b>, Jiayun Wu, Hongzhou Lin, Kaiyu Yang, Jia Li, Mengzhou Xia, Danqi Chen, Sanjeev Arora, Chi Jin"
 authors: "Yong Lin*, Shange Tang*, <b>Bohan Lyu</b>, Jiayun Wu, Hongzhou Lin, Kaiyu Yang, Jia Li, Mengzhou Xia, Danqi Chen, Sanjeev Arora, Chi Jin"
 venue: "Preprint"
-arxiv:
+arxiv: https://arxiv.org/abs/2502.07640
 code: https://github.com/Goedel-LM
 website: https://goedel-lm.github.io
 selected: true
