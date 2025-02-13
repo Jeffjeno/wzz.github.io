@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Goedel-Prover: A New Frontier in Automated Theorem Proving"
+title:  "Goedel-Prover: A Frontier Model for Open-Source Automated Theorem Proving"
 date:   2025-02-03 00:00:00 +00:00
 image: /images/lean.png
 categories: research
