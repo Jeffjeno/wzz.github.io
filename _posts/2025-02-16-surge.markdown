@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "SURGE: On the Potential of Large Language Models as General-Purpose Surrogate Code Executors"
+date:   2025-02-16 00:00:00 +00:00
+image: /images/surge.png
+categories: research
+author: "Bohan Lyu*, Siqiao Huang*, Zichen Liang*"
+authors: "Bohan Lyu*, Siqiao Huang*, Zichen Liang*"
+venue: "Preprint"
+arxiv: https://arxiv.org/abs/2502.11167
+code: https://github.com/Imbernoulli/SURGE
+website: 
+selected: true
+slides: 
+youtube: 
+---
+SURGE evaluates LLMs' ability to predict code execution across eight key areas. While they show promise, limitations prevent general-purpose surrogate execution.
