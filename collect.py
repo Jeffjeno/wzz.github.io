@@ -4,6 +4,8 @@ with open("output.txt", 'w', encoding='utf-8') as f:
     for root, dirs, files in os.walk("."):
         for file in files:
             file_path = os.path.join(root, file)
+            if "git" in file_path:
+                continue
             if "collect" in file_path:
                 continue
             if "output" in file_path:

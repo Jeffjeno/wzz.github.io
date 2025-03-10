@@ -11,5 +11,6 @@ arxiv: https://arxiv.org/pdf/2410.10563
 code: 
 website: https://tiger-ai-lab.github.io/MEGA-Bench/
 selected: false
+highlight: false
 ---
 MEGA-Bench contains 505 multimodal tasks with diverse data sources, input/output formats, and skill requirements. The benchmark is equiped with a suite of 45 evaluation metrics to handle various output formats beyond multiple-choice questions.

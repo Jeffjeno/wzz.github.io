@@ -12,6 +12,7 @@ code: https://github.com/Imbernoulli/SURGE
 website: 
 selected: true
 slides: 
-youtube: 
+youtube:
+highlight: false 
 ---
 SURGE evaluates LLMs' ability to predict code execution across eight key areas. While they show promise, limitations prevent general-purpose surrogate execution.

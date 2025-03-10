@@ -11,5 +11,6 @@ arxiv: https://arxiv.org/pdf/2405.19931
 code: 
 website: 
 selected: false
+highlight: false
 ---
 We apply Bayesian Neural Networks (BNNs) on Diffusion Models (DMs) with variational inference to implicitly broaden the learned distribution, and present that the learning target of the BNNs can be naturally regarded as an expectation of the diffusion loss and a further regularization with the pretrained DMs.
