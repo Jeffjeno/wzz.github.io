@@ -14,14 +14,14 @@ selected: true
 slides: 
 youtube: https://www.youtube.com/watch?v=pI7jc-czdfM&t=923s
 highlight: true
-bibtex: |
-  @misc{lin2025goedelprover,
-        title={Goedel-Prover: A Frontier Model for Open-Source Automated Theorem Proving},
-        author={Yong Lin and Shange Tang and Bohan Lyu and Jiayun Wu and Hongzhou Lin and Kaiyu Yang and Jia Li and Mengzhou Xia and Danqi Chen and Sanjeev Arora and Chi Jin},
-        year={2025},
-        eprint={2502.07640},
-        archivePrefix={arXiv},
-        primaryClass={cs.AI}
-  }
+# bibtex: |
+#   @misc{lin2025goedelprover,
+#         title={Goedel-Prover: A Frontier Model for Open-Source Automated Theorem Proving},
+#         author={Yong Lin and Shange Tang and Bohan Lyu and Jiayun Wu and Hongzhou Lin and Kaiyu Yang and Jia Li and Mengzhou Xia and Danqi Chen and Sanjeev Arora and Chi Jin},
+#         year={2025},
+#         eprint={2502.07640},
+#         archivePrefix={arXiv},
+#         primaryClass={cs.AI}
+#   }
 ---
 The new 7B Goedel-Prover sets a new state-of-the-art in open-source automated theorem proving, beating previous records with a 7% improvement on miniF2F, topping the PutnamBench Leaderboard, and solving nearly twice as many problems on Lean Workbook.
