@@ -10,7 +10,7 @@ venue: "Preprint"
 arxiv: https://arxiv.org/abs/2502.11167
 code: https://github.com/Imbernoulli/SURGE
 website: 
-selected: true
+selected: false 
 slides: 
 youtube:
 highlight: false 
