@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ineq-Comp: Benchmarking Human-Intuitive Compositional Reasoning in Automated Theorem Proving on Inequalities"
-date:   2023-12-30 00:00:00 +00:00
+date:   2025-05-20 00:00:00 +00:00
 image: /images/ineq.png
 categories: research
 author: "Haoyu Zhao, Yihan Geng, Shange Tang, Yong Lin, <b>Bohan Lyu</b>, Hongzhou Lin, Chi Jin, Sanjeev Arora"
