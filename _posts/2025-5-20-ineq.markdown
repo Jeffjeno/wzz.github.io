@@ -6,7 +6,7 @@ image: /images/ineq.png
 categories: research
 author: "Haoyu Zhao, Yihan Geng, Shange Tang, Yong Lin, <b>Bohan Lyu</b>, Hongzhou Lin, Chi Jin, Sanjeev Arora"
 authors: "Haoyu Zhao, Yihan Geng, Shange Tang, Yong Lin, <b>Bohan Lyu</b>, Hongzhou Lin, Chi Jin, Sanjeev Arora"
-venue:
+venue: Preprint
 arxiv: https://arxiv.org/pdf/2505.12680
 code: https://github.com/haoyuzhao123/LeanIneqComp
 website: 
