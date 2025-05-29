@@ -186,22 +186,20 @@
           {% endfor %}
         </table>
 
-        <script>
-          let expanded = false;
-          function togglePapers() {
-            const btn = document.getElementById('expandBtn');
-            const papers = document.getElementsByClassName('unselected-paper');
-
-            expanded = !expanded;
-
-            for (let paper of papers) {
-              paper.style.display = expanded ? 'table-row' : 'none';
-            }
-
-            btn.textContent = expanded ? 'Show Less' : 'Show All';
-          }
-        </script>
-        <br>
+        <table
+    style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr>
+      <td style="padding:2.5%;width:100%;vertical-align:middle">
+        <h2>Resources</h2>
+        <p>Some tools and resources I've developed for the research community:</p>
+        <ul>
+          <li>
+            <strong>jload</strong> - A Python package for efficient JSON data loading and processing.
+            <br>
+            <a href="https://pypi.org/project/jload/" target="_blank">PyPI Package</a>
+          </li>
+          <!-- You can add more resources here following the same format -->
+        </ul>
       </td>
     </tr>
   </table>
@@ -234,7 +232,26 @@
       </td>
     </tr>
   </table>
+
+        <br>
+      </td>
+    </tr>
+  </table>
   <script>
+    let expanded = false;
+    function togglePapers() {
+      const btn = document.getElementById('expandBtn');
+      const papers = document.getElementsByClassName('unselected-paper');
+
+      expanded = !expanded;
+
+      for (let paper of papers) {
+        paper.style.display = expanded ? 'table-row' : 'none';
+      }
+
+      btn.textContent = expanded ? 'Show Less' : 'Show All';
+    }
+
     document.addEventListener('DOMContentLoaded', function() {
       // Get modal elements
       const modal = document.getElementById('bibtexModal');
