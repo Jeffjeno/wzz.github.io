@@ -8,7 +8,7 @@ author: "<b>Bohan Lyu*</b>, Xin Cong*, Heyang Yu, Pan Yang, Yujia Qin, Yining Ye
 authors: "<b>Bohan Lyu*</b>, Xin Cong*, Heyang Yu, Pan Yang, Yujia Qin, Yining Ye, Yaxi Lu, Zhong Zhang, Yukun Yan, Yankai Lin, Zhiyuan Liu, Maosong Sun"
 venue: "<b>ACL 2025 (Main)</b>"
 arxiv: https://arxiv.org/abs/2312.17294
-code: 
+code: https://github.com/OpenBMB/OpenAct
 website: 
 selected: true
 highlight: false
