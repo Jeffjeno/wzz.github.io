@@ -12,5 +12,14 @@ code: https://github.com/OpenBMB/OpenAct
 website: 
 selected: true
 highlight: false
+bibtex: |
+    @inproceedings{
+        lyu2025enhancing,
+        title={Enhancing Large Language Model's Capabilities in Open Domains via Autonomous Tool Integration from {GitHub}},
+        author={Bohan Lyu and Xin Cong and Heyang Yu and Pan Yang and Cheng Qian and Zihe Wang and Yujia Qin and Yining Ye and Yaxi Lu and Chen Qian and Zhong Zhang and Yukun Yan and Yankai Lin and Zhiyuan Liu and Maosong Sun},
+        booktitle={The 63rd Annual Meeting of the Association for Computational Linguistics},
+        year={2025},
+        url={https://openreview.net/forum?id=cDppq8dYFA}
+    }
 ---
-Developed an autonomous agent that leverages GitHub repositories to extend its capabilities to address diverse user queries. Introduced a new agent architecture that achieved SOTA performance on SciAct.
+Constructed OpenAct benchmark for complex open-domain task-solving. Developed a novel LLM agent system, OpenAgent, which leverages GitHub repositories to extend its capabilities to address diverse user queries.
