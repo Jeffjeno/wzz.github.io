@@ -12,6 +12,7 @@ code: https://github.com/OpenBMB/OpenAct
 website: 
 selected: true
 highlight: false
+slides: /pdfs/OpenAct_Pre.pdf
 bibtex: |
     @inproceedings{
         lyu2025enhancing,
