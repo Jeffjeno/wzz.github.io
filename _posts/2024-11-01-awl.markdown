@@ -9,7 +9,7 @@ authors: "<b>Bohan Lyu*</b>, Yadi Cao*, Duncan Watson-Parris, Leon Bergen, Taylo
 venue: "<b>ICML 2025</b>, AAAI FSS ORAL"
 arxiv: https://arxiv.org/abs/2411.00412
 code: https://github.com/Rose-STL-Lab/Adapting-While-Learning
-website: 
+website: https://icml.cc/virtual/2025/poster/44034
 selected: true
 slides: /pdfs/AWL-FSS.pdf
 youtube: https://youtu.be/EPhse_oOdEc?si=5L8PytRUhWp94vXQ
