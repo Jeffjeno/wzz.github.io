@@ -25,4 +25,4 @@ bibtex: |
         url={https://arxiv.org/abs/2502.11167}, 
     }
 ---
-SURGE evaluates LLMs' ability to predict code execution across eight key areas. While they show promise, limitations prevent general-purpose surrogate execution. <i>[This is an extension of a course project that does not reflect the focus of my research.]</i>
+SURGE evaluates LLMs' ability to predict code execution across eight key areas. While they show promise, limitations prevent general-purpose surrogate execution. <u>This is an extension of a course project that does not reflect the focus of my research.</u>
