@@ -6,7 +6,7 @@ image: /images/awl.png
 categories: research
 author: "<b>Bohan Lyu*</b>, Yadi Cao*, Duncan Watson-Parris, Leon Bergen, Taylor Berg-Kirkpatrick, Rose Yu"
 authors: "<b>Bohan Lyu*</b>, Yadi Cao*, Duncan Watson-Parris, Leon Bergen, Taylor Berg-Kirkpatrick, Rose Yu"
-venue: "<b>ICML 2025</b>, AAAI FSS ORAL"
+venue: "<b>ICML 2025</b>, AAAI 2024 FSS (ORAL)"
 arxiv: https://arxiv.org/abs/2411.00412
 code: https://github.com/Rose-STL-Lab/Adapting-While-Learning
 website: https://icml.cc/virtual/2025/poster/44034
