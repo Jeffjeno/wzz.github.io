@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Enhancing LLM’s Capabilities in Open Domains via Autonomous Tool Integration"
+title:  "Enhancing LLM's Capabilities in Open Domains via Autonomous Tool Integration"
 date:   2023-12-30 00:00:00 +00:00
 image: /images/GA.png
 categories: research
