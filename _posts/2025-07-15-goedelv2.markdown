@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Goedel-Prover-V2: The Strongest Open-Source Theorem Prover to Date"
+date:   2025-07-15 00:00:00 +00:00
+image: /images/goedel-v2.png
+categories: research
+author: "Yong Lin*, Shange Tang*, Bohan Lyu*, Ziran Yang*, Jui-Hui Chung*, Haoyu Zhao*, Lai Jiang, Yihan Geng, Jiawei Ge, Jingruo Sun, Jiayun Wu, Jiri Gesi, David Acuna, Kaiyu Yang, Hongzhou Lin, Yejin Choi, Danqi Chen, Sanjeev Arora, Chi Jin"
+authors: "Yong Lin*, Shange Tang*, Bohan Lyu*, Ziran Yang*, Jui-Hui Chung*, Haoyu Zhao*, Lai Jiang, Yihan Geng, Jiawei Ge, Jingruo Sun, Jiayun Wu, Jiri Gesi, David Acuna, Kaiyu Yang, Hongzhou Lin, Yejin Choi, Danqi Chen, Sanjeev Arora, Chi Jin"
+venue: "Blog"
+arxiv: 
+code: 
+website: http://blog.goedel-prover.com
+selected: true
+slides: 
+youtube: 
+highlight: true
+bibtex: 
+---
+Goedel-Prover-V2 sets new state-of-the-art in automated proof generation with dramatically smaller models, using scaffolded training, self-correction, and model averaging to outperform systems 20-100x larger on key mathematical benchmarks.
