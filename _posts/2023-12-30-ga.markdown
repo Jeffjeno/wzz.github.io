@@ -9,7 +9,7 @@ authors: "<b>Bohan Lyu*</b>, Xin Cong*, Heyang Yu, Pan Yang, Yujia Qin, Yining Y
 venue: "<b>ACL 2025 (Main)</b>"
 arxiv: https://arxiv.org/abs/2312.17294
 code: https://github.com/OpenBMB/OpenAct
-website: 
+website: https://aclanthology.org/2025.acl-long.845
 selected: true
 highlight: false
 slides: /pdfs/OpenAct_Pre.pdf
