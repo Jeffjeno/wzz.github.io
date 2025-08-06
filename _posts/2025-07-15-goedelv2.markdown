@@ -7,8 +7,8 @@ categories: research
 author: "Yong Lin*, Shange Tang*, <b>Bohan Lyu*</b>, Ziran Yang*, Jui-Hui Chung*, Haoyu Zhao*, Lai Jiang, Yihan Geng, Jiawei Ge, Jingruo Sun, Jiayun Wu, Jiri Gesi, David Acuna, Kaiyu Yang, Hongzhou Lin, Yejin Choi, Danqi Chen, Sanjeev Arora, Chi Jin"
 authors: "Yong Lin*, Shange Tang*, <b>Bohan Lyu*</b>, Ziran Yang*, Jui-Hui Chung*, Haoyu Zhao*, Lai Jiang, Yihan Geng, Jiawei Ge, Jingruo Sun, Jiayun Wu, Jiri Gesi, David Acuna, Kaiyu Yang, Hongzhou Lin, Yejin Choi, Danqi Chen, Sanjeev Arora, Chi Jin"
 venue: "Blog"
-arxiv: 
-code: 
+arxiv: https://arxiv.org/abs/2508.03613
+code: https://github.com/Goedel-LM/Goedel-Prover-V2
 website: http://blog.goedel-prover.com
 selected: true
 slides: 

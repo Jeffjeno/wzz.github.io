@@ -179,6 +179,103 @@ span.highlight {
 //@import "highlights";
 //@import "svg-icons";
 
+/* --- BibTeX Modal Styles --- */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.6); /* Dim background */
+  padding-top: 60px; /* Location of the box */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 5% from the top and centered */
+  padding: 25px;
+  border: 1px solid #888;
+  width: 85%; /* Responsive width */
+  max-width: 700px; /* Maximum width */
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  font-family: 'Lato', Verdana, Helvetica, sans-serif; // Match your site font
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px; // Adjust as needed
+  display: block; // Override inline display if set globally for h2
+  text-align: left; // Override center if needed
+}
+
+/* Close Button */
+.close-button {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* BibTeX Content Area */
+#modalBibtexContent {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 15px;
+  white-space: pre-wrap;   /* CSS3, wraps text preserving whitespace */
+  word-wrap: break-word; /* IE 5.5+, breaks long words */
+  max-height: 400px;     /* Limit height */
+  overflow-y: auto;      /* Add scrollbar if content overflows */
+  font-family: 'Courier New', Courier, monospace; /* Monospace for code */
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+/* Copy Button Styling */
+#copyBibtexButton {
+  background-color: #2B64D9; // Match link color
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+#copyBibtexButton:hover {
+  background-color: #f09228; // Match link hover color
+}
+
+/* BibTeX trigger link style (optional) */
+.bibtex-trigger {
+  cursor: pointer; // Indicate it's clickable
+  // Add other styles if desired, e.g., border-bottom: 1px dashed #2B64D9;
+}
+
+/* --- End BibTeX Modal Styles --- */
 
 === File: ./_config.yml ===
 #
@@ -289,6 +386,12 @@ convert -background transparent "images/BH.png" -define icon:auto-resize=16,24,3
 === File: ./images/BH.png ===
 
 
+=== File: ./images/ineq.png ===
+
+
+=== File: ./images/goedel-v2.png ===
+
+
 === File: ./images/blueMe.png ===
 
 
@@ -326,20 +429,166 @@ title:  "SURGE: On the Potential of Large Language Models as General-Purpose Sur
 date:   2025-02-16 00:00:00 +00:00
 image: /images/surge.png
 categories: research
-author: "<b>Bohan Lyu*</b>, Siqiao Huang*, Zichen Liang*"
-authors: "<b>Bohan Lyu*</b>, Siqiao Huang*, Zichen Liang*"
+author: "<b>Bohan Lyu*</b>, Siqiao Huang*, Zichen Liang*, Qi-An Sun, Jiaming Zhang"
+authors: "<b>Bohan Lyu*</b>, Siqiao Huang*, Zichen Liang*, Qi-An Sun, Jiaming Zhang"
 venue: "Preprint"
 arxiv: https://arxiv.org/abs/2502.11167
 code: https://github.com/Imbernoulli/SURGE
 website: 
-selected: true
+selected: false 
 slides: 
 youtube:
-highlight: false 
+highlight: false
+bibtex: |
+    @misc{lyu2025surgepotentiallargelanguage,
+        title={SURGE: On the Potential of Large Language Models as General-Purpose Surrogate Code Executors}, 
+        author={Bohan Lyu and Siqiao Huang and Zichen Liang and Qi-An Sun and Jiaming Zhang},
+        year={2025},
+        eprint={2502.11167},
+        archivePrefix={arXiv},
+        primaryClass={cs.LG},
+        url={https://arxiv.org/abs/2502.11167}, 
+    }
 ---
-SURGE evaluates LLMs' ability to predict code execution across eight key areas. While they show promise, limitations prevent general-purpose surrogate execution.
+SURGE evaluates LLMs' ability to predict code execution across eight key areas. While they show promise, limitations prevent general-purpose surrogate execution. <u>This is an extension of a course project that does not reflect the focus of my research.</u>
 
-=== File: ./_posts/2024-10-14-bb.markdown ===
+=== File: ./_posts/2023-12-30-ga.markdown ===
+---
+layout: post
+title:  "Enhancing LLM's Capabilities in Open Domains via Autonomous Tool Integration"
+date:   2023-12-30 00:00:00 +00:00
+image: /images/GA.png
+categories: research
+author: "<b>Bohan Lyu*</b>, Xin Cong*, Heyang Yu, Pan Yang, Yujia Qin, Yining Ye, Yaxi Lu, Zhong Zhang, Yukun Yan, Yankai Lin, Zhiyuan Liu, Maosong Sun"
+authors: "<b>Bohan Lyu*</b>, Xin Cong*, Heyang Yu, Pan Yang, Yujia Qin, Yining Ye, Yaxi Lu, Zhong Zhang, Yukun Yan, Yankai Lin, Zhiyuan Liu, Maosong Sun"
+venue: "<b>ACL 2025 (Main)</b>"
+arxiv: https://arxiv.org/abs/2312.17294
+code: https://github.com/OpenBMB/OpenAct
+website: https://aclanthology.org/2025.acl-long.845
+selected: true
+highlight: false
+slides: /pdfs/OpenAct_Pre.pdf
+youtube: https://www.youtube.com/watch?v=laW4ApAlxik
+bibtex: |
+    @inproceedings{
+        lyu2025enhancing,
+        title={Enhancing Large Language Model's Capabilities in Open Domains via Autonomous Tool Integration from {GitHub}},
+        author={Bohan Lyu and Xin Cong and Heyang Yu and Pan Yang and Cheng Qian and Zihe Wang and Yujia Qin and Yining Ye and Yaxi Lu and Chen Qian and Zhong Zhang and Yukun Yan and Yankai Lin and Zhiyuan Liu and Maosong Sun},
+        booktitle={The 63rd Annual Meeting of the Association for Computational Linguistics},
+        year={2025},
+        url={https://openreview.net/forum?id=cDppq8dYFA}
+    }
+---
+Constructed OpenAct benchmark for complex open-domain task-solving. Developed a novel LLM agent system, OpenAgent, which leverages GitHub repositories to extend its capabilities to address diverse user queries.
+
+=== File: ./_posts/2025-07-15-goedelv2.markdown ===
+---
+layout: post
+title:  "Goedel-Prover-V2: The Strongest Open-Source Theorem Prover to Date"
+date:   2025-07-15 00:00:00 +00:00
+image: /images/goedel-v2.png
+categories: research
+author: "Yong Lin*, Shange Tang*, <b>Bohan Lyu*</b>, Ziran Yang*, Jui-Hui Chung*, Haoyu Zhao*, Lai Jiang, Yihan Geng, Jiawei Ge, Jingruo Sun, Jiayun Wu, Jiri Gesi, David Acuna, Kaiyu Yang, Hongzhou Lin, Yejin Choi, Danqi Chen, Sanjeev Arora, Chi Jin"
+authors: "Yong Lin*, Shange Tang*, <b>Bohan Lyu*</b>, Ziran Yang*, Jui-Hui Chung*, Haoyu Zhao*, Lai Jiang, Yihan Geng, Jiawei Ge, Jingruo Sun, Jiayun Wu, Jiri Gesi, David Acuna, Kaiyu Yang, Hongzhou Lin, Yejin Choi, Danqi Chen, Sanjeev Arora, Chi Jin"
+venue: "Blog"
+arxiv: 
+code: 
+website: http://blog.goedel-prover.com
+selected: true
+slides: 
+youtube: 
+highlight: true
+bibtex: 
+---
+Goedel-Prover-V2 sets new state-of-the-art in automated proof generation with dramatically smaller models, using scaffolded training, self-correction, and model averaging to outperform systems 20-100x larger on key mathematical benchmarks.
+
+=== File: ./_posts/2024-11-01-awl.markdown ===
+---
+layout: post
+title:  "Adapting While Learning: Grounding LLMs for Scientific Problems with Intelligent Tool Usage Adaptation"
+date:   2024-11-01 00:00:00 +00:00
+image: /images/awl.png
+categories: research
+author: "<b>Bohan Lyu*</b>, Yadi Cao*, Duncan Watson-Parris, Leon Bergen, Taylor Berg-Kirkpatrick, Rose Yu"
+authors: "<b>Bohan Lyu*</b>, Yadi Cao*, Duncan Watson-Parris, Leon Bergen, Taylor Berg-Kirkpatrick, Rose Yu"
+venue: "<b>ICML 2025</b>, AAAI 2024 FSS (ORAL)"
+arxiv: https://arxiv.org/abs/2411.00412
+code: https://github.com/Rose-STL-Lab/Adapting-While-Learning
+website: https://icml.cc/virtual/2025/poster/44034
+selected: true
+slides: /pdfs/AWL-FSS.pdf
+youtube: https://youtu.be/EPhse_oOdEc?si=5L8PytRUhWp94vXQ
+highlight: true
+bibtex: |
+    @inproceedings{
+        lyu2025adapting,
+        title={Adapting While Learning: Grounding {LLM}s for Scientific Problems with Tool Usage Adaptation},
+        author={Bohan Lyu and Yadi Cao and Duncan Watson-Parris and Leon Bergen and Taylor Berg-Kirkpatrick and Rose Yu},
+        booktitle={Forty-second International Conference on Machine Learning},
+        year={2025},
+        url={https://openreview.net/forum?id=owulFly8oQ}
+    }
+---
+This work proposes a fine-tuning method where LLMs internalize tool-generated solutions (World Knowledge Distillation) and learn to switch between direct answers and tool use for complex problems (Tool Usage Adaptation). It outperforms GPT-4 and Claude-3.5 across six scientific benchmarks.
+
+=== File: ./_posts/2025-5-20-ineq.markdown ===
+---
+layout: post
+title:  "Ineq-Comp: Benchmarking Human-Intuitive Compositional Reasoning in Automated Theorem Proving on Inequalities"
+date:   2025-05-20 00:00:00 +00:00
+image: /images/ineq.png
+categories: research
+author: "Haoyu Zhao, Yihan Geng, Shange Tang, Yong Lin, <b>Bohan Lyu</b>, Hongzhou Lin, Chi Jin, Sanjeev Arora"
+authors: "Haoyu Zhao, Yihan Geng, Shange Tang, Yong Lin, <b>Bohan Lyu</b>, Hongzhou Lin, Chi Jin, Sanjeev Arora"
+venue: Preprint
+arxiv: https://arxiv.org/pdf/2505.12680
+code: https://github.com/haoyuzhao123/LeanIneqComp
+website: 
+selected: false
+highlight: false
+bibtex: |
+    @article{zhao2025ineq,
+        title={Ineq-Comp: Benchmarking Human-Intuitive Compositional Reasoning in Automated Theorem Proving on Inequalities},
+        author={Zhao, Haoyu and Geng, Yihan and Tang, Shange and Lin, Yong and Lyu, Bohan and Lin, Hongzhou and Jin, Chi and Arora, Sanjeev},
+        journal={arXiv preprint arXiv:2505.12680},
+        year={2025}
+    }
+---
+LLM-based proof assistants struggle with compositional reasoning in inequalities. The Ineq-Comp benchmark reveals that even strong models like DeepSeek-Prover-V2-7B falter, despite having proofs of subparts. This highlights a key gap between AI and human mathematical intuition.
+
+=== File: ./_posts/2025-02-03-lean.markdown ===
+---
+layout: post
+title:  "Goedel-Prover: A Frontier Model for Open-Source Automated Theorem Proving"
+date:   2025-02-03 00:00:00 +00:00
+image: /images/lean.png
+categories: research
+author: "Yong Lin*, Shange Tang*, <b>Bohan Lyu</b>, Jiayun Wu, Hongzhou Lin, Kaiyu Yang, Jia Li, Mengzhou Xia, Danqi Chen, Sanjeev Arora, Chi Jin"
+authors: "Yong Lin*, Shange Tang*, <b>Bohan Lyu</b>, Jiayun Wu, Hongzhou Lin, Kaiyu Yang, Jia Li, Mengzhou Xia, Danqi Chen, Sanjeev Arora, Chi Jin"
+venue: "<b>COLM 2025</b>"
+arxiv: https://arxiv.org/abs/2502.07640
+code: https://github.com/Goedel-LM
+website: https://goedel-lm.github.io
+selected: true
+slides: 
+youtube: https://www.youtube.com/watch?v=pI7jc-czdfM&t=923s
+highlight:
+bibtex: |
+    @misc{lin2025goedelprover,
+        title={Goedel-Prover: A Frontier Model for Open-Source Automated Theorem Proving},
+        author={Yong Lin and Shange Tang and Bohan Lyu and Jiayun Wu and Hongzhou Lin and Kaiyu Yang and Jia Li and Mengzhou Xia and Danqi Chen and Sanjeev Arora and Chi Jin},
+        year={2025},
+        eprint={2502.07640},
+        archivePrefix={arXiv},
+        primaryClass={cs.AI},
+        booktitle={Second Conference on Language Modeling},
+        year={2025},
+        url={https://openreview.net/forum?id=x2y9i2HDjD}
+    }
+---
+The new 7B Goedel-Prover sets a new state-of-the-art in open-source automated theorem proving, beating previous records with a 7% improvement on miniF2F, topping the PutnamBench Leaderboard, and solving nearly twice as many problems on Lean Workbook.
+
+=== File: ./_old_posts/2024-10-14-bb.markdown ===
 ---
 layout: post
 title:  "MEGA-Bench: Scaling Multimodal Evaluation to over 500 Real-World Tasks"
@@ -357,25 +606,7 @@ highlight: false
 ---
 MEGA-Bench contains 505 multimodal tasks with diverse data sources, input/output formats, and skill requirements. The benchmark is equiped with a suite of 45 evaluation metrics to handle various output formats beyond multiple-choice questions.
 
-=== File: ./_posts/2023-12-30-ga.markdown ===
----
-layout: post
-title:  "Enhancing LLM’s Capabilities in Open Domains via Autonomous Tool Integration"
-date:   2023-12-30 00:00:00 +00:00
-image: /images/GA.png
-categories: research
-author: "<b>Bohan Lyu*</b>, Xin Cong*, Heyang Yu, Pan Yang, Yujia Qin, Yining Ye, Yaxi Lu, Zhong Zhang, Yukun Yan, Yankai Lin, Zhiyuan Liu, Maosong Sun"
-authors: "<b>Bohan Lyu*</b>, Xin Cong*, Heyang Yu, Pan Yang, Yujia Qin, Yining Ye, Yaxi Lu, Zhong Zhang, Yukun Yan, Yankai Lin, Zhiyuan Liu, Maosong Sun"
-venue: "Under Peer Review"
-arxiv: https://arxiv.org/abs/2312.17294
-code: 
-website: 
-selected: true
-highlight: false
----
-Developed an autonomous agent that leverages GitHub repositories to extend its capabilities to address diverse user queries. Introduced a new agent architecture that achieved SOTA performance on SciAct.
-
-=== File: ./_posts/2024-05-30-bnn.markdown ===
+=== File: ./_old_posts/2024-05-30-bnn.markdown ===
 ---
 layout: post
 title:  "Exploring Diffusion Models’ Corruption Stage in Few-Shot Fine-tuning and Mitigating with Bayesian Neural Networks"
@@ -393,27 +624,7 @@ highlight: false
 ---
 We apply Bayesian Neural Networks (BNNs) on Diffusion Models (DMs) with variational inference to implicitly broaden the learned distribution, and present that the learning target of the BNNs can be naturally regarded as an expectation of the diffusion loss and a further regularization with the pretrained DMs.
 
-=== File: ./_posts/2024-11-01-awl.markdown ===
----
-layout: post
-title:  "Adapting While Learning: Grounding LLMs for Scientific Problems with Intelligent Tool Usage Adaptation"
-date:   2024-11-01 00:00:00 +00:00
-image: /images/awl.png
-categories: research
-author: "<b>Bohan Lyu*</b>, Yadi Cao*, Duncan Watson-Parris, Leon Bergen, Taylor Berg-Kirkpatrick, Rose Yu"
-authors: "<b>Bohan Lyu*</b>, Yadi Cao*, Duncan Watson-Parris, Leon Bergen, Taylor Berg-Kirkpatrick, Rose Yu"
-venue: "<b>ICML 2025</b>, AAAI FSS ORAL"
-arxiv: https://arxiv.org/abs/2411.00412
-code: 
-website: 
-selected: true
-slides: /pdfs/AWL-FSS.pdf
-youtube: https://youtu.be/EPhse_oOdEc?si=5L8PytRUhWp94vXQ
-highlight: true
----
-This work proposes a fine-tuning method where LLMs internalize tool-generated solutions (World Knowledge Distillation) and learn to switch between direct answers and tool use for complex problems (Tool Usage Adaptation). It outperforms GPT-4 and Claude-3.5 across six scientific benchmarks.
-
-=== File: ./_posts/2024-06-25-vs.markdown ===
+=== File: ./_old_posts/2024-06-25-vs.markdown ===
 ---
 layout: post
 title:  "VIDEOSCORE: Building Automatic Metrics to Simulate Fine-grained Human Feedback for Video Generation"
@@ -430,26 +641,6 @@ selected: false
 highlight: false
 ---
 We release VIDEOFEEDBACK, the first large-scale dataset containing human-provided multi-aspect score over 37.6K synthesized videos from 11 existing video generative models. We train VIDEOSCORE based on VIDEOFEEDBACK to enable automatic video quality assessment.
-
-=== File: ./_posts/2025-02-03-lean.markdown ===
----
-layout: post
-title:  "Goedel-Prover: A Frontier Model for Open-Source Automated Theorem Proving"
-date:   2025-02-03 00:00:00 +00:00
-image: /images/lean.png
-categories: research
-author: "Yong Lin*, Shange Tang*, <b>Bohan Lyu</b>, Jiayun Wu, Hongzhou Lin, Kaiyu Yang, Jia Li, Mengzhou Xia, Danqi Chen, Sanjeev Arora, Chi Jin"
-authors: "Yong Lin*, Shange Tang*, <b>Bohan Lyu</b>, Jiayun Wu, Hongzhou Lin, Kaiyu Yang, Jia Li, Mengzhou Xia, Danqi Chen, Sanjeev Arora, Chi Jin"
-venue: "Preprint"
-arxiv: https://arxiv.org/abs/2502.07640
-code: https://github.com/Goedel-LM
-website: https://goedel-lm.github.io
-selected: true
-slides: 
-youtube: https://www.youtube.com/watch?v=pI7jc-czdfM&t=923s
-highlight: true
----
-The new 7B Goedel-Prover sets a new state-of-the-art in open-source automated theorem proving, beating previous records with a 7% improvement on miniF2F, topping the PutnamBench Leaderboard, and solving nearly twice as many problems on Lean Workbook.
 
 === File: ./_layouts/post.html ===
 ---
@@ -497,11 +688,10 @@ layout: default
                 Bohan Lyu
               </h1>
               <p>
-                I am an undergruduate at <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>, pursuing a
-                dual degree in Computer Science and Economics since 2022.
+                I am an undergruduate at <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>. I'm interested in ML and NLP topics. My works are published in ICML and ACL.
               </p>
               <p>
-                Now I'm working on LLMs for autonomous math theorem proving with formal language at <a href="https://pli.princeton.edu">PLI, Princeton</a>, advised by Prof. <a
+                Now I'm working on LLMs for autonomous math theorem proving at <a href="https://pli.princeton.edu">PLI, Princeton</a>, advised by Prof. <a
                 href="https://sites.google.com/view/cjin/home">Prof. Chi Jin</a>. Prior to it, I've worked in <a href="https://nlp.csai.tsinghua.edu.cn">Tsinghua NLP</a> Lab, advised by <a
                   href="https://nlp.csai.tsinghua.edu.cn/~lzy/">Prof. Zhiyuan Liu</a>, and Rose-STL-Lab, <a
                   href="https://www.ucsd.edu" style="color: #1B264A;">UCSD</a>, advised by <a
@@ -509,9 +699,9 @@ layout: default
                   href="https://en.wikipedia.org/wiki/CSC_Financial#[new]_China_Securities_Co.,_Ltd._(2005–)"
                   style="color: #595c5b;">China Securities</a>.
               </p>
-              <p>
+              <!-- <p>
                 Recently I'm particularly interested in math theorem proving in formal language, and its applications (e.g. how it can benefit natural language reasoning).
-              </p>
+              </p> -->
               <!-- <p>
                 My research interests lie in facilitating scientific discovery with large models. My current research
                 questions are:
@@ -562,21 +752,24 @@ layout: default
           style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>News</h2>
+              <h2 id="News">News</h2>
               <ul>
+                <li> <b>2025-07</b> Releasing <i>Goedel-Prover-V2</i>!</li>
+                <li> <b>2025-07</b> <i>Goedel-Prover</i> is accepted to <b>COLM 2025</b>!</li>
+                <li> <b>2025-05</b> <i>Enhancing LLM's Capabilities in Open Domains via Autonomous Tool Integration</i> is accepted to <b>ACL 2025 Main</b>!</li>
                 <li> <b>2025-05</b> <i>Adapting while Learning</i> is accepted to <b>ICML 2025</b>!</li>
-                <li> <b>2024-12</b> Delivered a talk at the Challenge Cup Seminar hosted by Department of
-                  Automation, Tsinghua University.</li>
-                <li> <b>2024-11</b> Gave a talk on my summer project at AAAI FSS.</li>
-                <li> <b>2024-10</b> Awarded the Scholarship for Technological Innovation of 5,000 RMB.</li>
+                <!-- <li> <b>2024-12</b> Delivered a talk at the Challenge Cup Seminar hosted by Department of
+                  Automation, Tsinghua University.</li> -->
+                <!-- <li> <b>2024-11</b> Gave a talk on my summer project at AAAI FSS.</li> -->
+                <!-- <li> <b>2024-10</b> Awarded the Scholarship for Technological Innovation of 5,000 RMB.</li> -->
                 <!-- <li> <b>2024-09</b> My first-author paper is invited to give a 30-min talk at AAAI FSS 2024.</li> -->
                 <li> <b>2024-06</b> My team got <b>No.1</b> out of 600+ teams at a Baidu Inc. Data Mining Competition.
                 </li>
                 <li> <b>2024-05</b> Awarded Spark Scientific and Technological Innovation Fellowship (<b>Top 1%</b> in Tsinghua). </li>
                 <li> <b>2024-04</b> I led my team to win Second Place and the Newcomer Prize at <b>Tsinghua University's
                     Challenge Cup</b>. </li>
-                <li> <b>2024-04</b> I received a Grade A in the 'Global Exploration Initiative' and was awarded a grant
-                  of 20,000 RMB. </li>
+                <!-- <li> <b>2024-04</b> I received a Grade A in the 'Global Exploration Initiative' and was awarded a grant
+                  of 20,000 RMB. </li> -->
               </ul>
             </td>
           </tr>
@@ -586,9 +779,9 @@ layout: default
           style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research <span style="font-size: 14px;">(* indicates equal contribution, <span style="background-color: #e3f2fd;">highlight</span> indicates representative papers)</span></h2>
+              <h2 id="Research">Research <span style="font-size: 14px;">(* indicates equal contribution, <span style="background-color: #e3f2fd;">highlight</span> indicates representative papers)</span></h2>
               <p>
-                I'm interested in Natural Language Processing, AI4Science and multimodal learning.
+                I'm interested in AI for MATH, ML for NLP and their applications.
                 <button onclick="togglePapers()" id="expandBtn" style="float:right;margin-left:10px;">Show All</button>
               </p>
             </td>
@@ -609,28 +802,31 @@ layout: default
                 <br>
                 {{post.authors}}
                 <br>
-                <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+                <em>{{post.venue}}</em>
                 <br>
                 {% if post.arxiv %}
-                <a href="{{post.arxiv}}">arxiv</a> /
+                <a href="{{post.arxiv}}">arXiv</a> /
                 {% endif %}
                 {% if post.video %}
-                <a href="{{post.video}}">video</a> /
+                <a href="{{post.video}}">Video</a> /
                 {% endif %}
                 {% if post.code %}
-                <a href="{{post.code}}">code</a> /
+                <a href="{{post.code}}">Code</a> /
                 {% endif %}
                 {% if post.poster %}
-                <a href="{{post.poster}}">poster</a> /
+                <a href="{{post.poster}}">Poster</a> /
                 {% endif %}
                 {% if post.slides %}
-                <a href="{{post.slides}}">slides</a> /
+                <a href="{{post.slides}}">Slides</a> /
                 {% endif %}
                 {% if post.website %}
-                <a href="{{post.website}}">website</a> /
+                <a href="{{post.website}}">Website</a> /
                 {% endif %}
                 {% if post.youtube %}
-                <a href="{{post.youtube}}">youtube</a> /
+                <a href="{{post.youtube}}">YouTube</a> /
+                {% endif %}
+                {% if post.bibtex %}
+                <a href="#" class="bibtex-trigger" data-bibtex="{{ post.bibtex | escape_once }}">BibTeX</a> /
                 {% endif %}
                 <p></p>
                 {{ post.excerpt }}
@@ -642,25 +838,31 @@ layout: default
           {% endfor %}
         </table>
 
-        <script>
-          let expanded = false;
-          function togglePapers() {
-            const btn = document.getElementById('expandBtn');
-            const papers = document.getElementsByClassName('unselected-paper');
-
-            expanded = !expanded;
-
-            for (let paper of papers) {
-              paper.style.display = expanded ? 'table-row' : 'none';
-            }
-
-            btn.textContent = expanded ? 'Show Less' : 'Show All';
-          }
-        </script>
-        <br>
+        <table
+    style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr>
+      <td style="padding:2.5%;width:100%;vertical-align:middle">
+        <h2 id="Resources">Resources</h2>
+        <p>Some tools and resources I've developed for the research community:</p>
+        <ul>
+          <li>
+            <strong>jload</strong> - A Python package for convenient JSON/JSONL data loading and saving.
+            <a href="https://badge.fury.io/py/jload">
+              <img src="https://badge.fury.io/py/jload.svg" alt="PyPI version">
+            </a>
+          </li>
+          <li>
+            <strong>vlllm</strong> - A Python package for convenient text generation with multiprocessing support.
+            <a href="https://badge.fury.io/py/vlllm">
+              <img src="https://badge.fury.io/py/vlllm.svg" alt="PyPI version">
+            </a>
+          </li>
+        </ul>
       </td>
     </tr>
   </table>
+  <br>
+  <br>
   <table
     style="width:100%;max-width:100px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tr style="padding:0px">
@@ -679,7 +881,6 @@ layout: default
   </table>
   <br>
   <br>
-  <br>
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tr>
       <td style="padding:0px">
@@ -690,7 +891,129 @@ layout: default
       </td>
     </tr>
   </table>
+
+        <br>
+      </td>
+    </tr>
+  </table>
   <script>
+    let expanded = false;
+    function togglePapers() {
+      const btn = document.getElementById('expandBtn');
+      const papers = document.getElementsByClassName('unselected-paper');
+
+      expanded = !expanded;
+
+      for (let paper of papers) {
+        paper.style.display = expanded ? 'table-row' : 'none';
+      }
+
+      btn.textContent = expanded ? 'Show Less' : 'Show All';
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get modal elements
+      const modal = document.getElementById('bibtexModal');
+      const modalContentEl = document.getElementById('modalBibtexContent');
+      const closeBtn = modal.querySelector('.close-button');
+      const copyBtn = document.getElementById('copyBibtexButton');
+      const copyFeedbackEl = document.getElementById('copyFeedback');
+    
+      // Get all BibTeX trigger links
+      const bibtexTriggers = document.querySelectorAll('.bibtex-trigger');
+    
+      // Function to show the modal
+      function showModal(bibtexContent) {
+        // Trim leading/trailing whitespace and set content
+        modalContentEl.textContent = bibtexContent.trim();
+        modal.style.display = 'block';
+        copyFeedbackEl.style.display = 'none'; // Hide feedback initially
+        copyBtn.disabled = false; // Ensure button is enabled
+      }
+    
+      // Function to hide the modal
+      function hideModal() {
+        modal.style.display = 'none';
+        modalContentEl.textContent = ''; // Clear content for next time
+      }
+    
+      // Add click listeners to all trigger links
+      bibtexTriggers.forEach(trigger => {
+        trigger.addEventListener('click', function(event) {
+          event.preventDefault(); // Prevent default link behavior
+          const bibtex = this.dataset.bibtex;
+          if (bibtex) {
+            showModal(bibtex);
+          } else {
+            console.warn("BibTeX data not found for this link.");
+          }
+        });
+      });
+    
+      // Add listener to close button
+      closeBtn.addEventListener('click', hideModal);
+    
+      // Add listener to close modal when clicking outside the modal content
+      window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+          hideModal();
+        }
+      });
+    
+      // Add listener for copy button
+      copyBtn.addEventListener('click', function() {
+        const textToCopy = modalContentEl.textContent;
+    
+        // Use the modern Clipboard API
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(textToCopy).then(() => {
+            // Success feedback
+            copyFeedbackEl.style.display = 'inline'; // Show feedback
+            copyBtn.disabled = true; // Temporarily disable button
+            setTimeout(() => {
+                copyFeedbackEl.style.display = 'none';
+                copyBtn.disabled = false; // Re-enable button
+            }, 2000); // Reset after 2 seconds
+          }).catch(err => {
+            console.error('Async: Could not copy text: ', err);
+            alert('Failed to copy automatically. Please select and copy manually.'); // Fallback
+          });
+        } else {
+          // Fallback for older browsers or non-secure contexts (less reliable)
+          try {
+            const textArea = document.createElement("textarea");
+            textArea.value = textToCopy;
+            textArea.style.position = "fixed"; // Prevent scrolling to bottom
+            textArea.style.opacity = "0";
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+    
+            // Success feedback
+            copyFeedbackEl.style.display = 'inline';
+            copyBtn.disabled = true;
+            setTimeout(() => {
+                copyFeedbackEl.style.display = 'none';
+                copyBtn.disabled = false;
+            }, 2000);
+          } catch (err) {
+            console.error('Fallback: Oops, unable to copy', err);
+            alert('Failed to copy automatically. Please select and copy manually.');
+          }
+        }
+      });
+    
+      // Optional: Close modal with Escape key
+      document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape" && modal.style.display === 'block') {
+          hideModal();
+        }
+      });
+    
+    });
+
     function toggleContactInfo() {
       var contactInfo = document.getElementById('contactInfo');
       var icon = document.querySelector('.toggleIcon');
@@ -703,6 +1026,15 @@ layout: default
       }
     }
   </script>
+  <div id="bibtexModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Please cite if you find it helpful.</h2>
+      <pre id="modalBibtexContent">BibTeX content will appear here.</pre>
+      <button id="copyBibtexButton">Copy to Clipboard</button>
+      <span id="copyFeedback" style="margin-left: 10px; color: green; display: none;">Copied!</span>
+    </div>
+  </div>
 </body>
 
 </html>
@@ -711,6 +1043,9 @@ layout: default
 
 
 === File: ./pdfs/GitAgent.pdf ===
+
+
+=== File: ./pdfs/OpenAct_Pre.pdf ===
 
 
 === File: ./pdfs/AAAI2024_Grounding_LLM_Bohan.pdf ===
