@@ -14,6 +14,13 @@ selected: true
 slides: 
 youtube: 
 highlight: true
-bibtex: 
+bibtex: ｜
+    @article{lin2025goedelproverv2,
+        title={Goedel-Prover-V2: Scaling Formal Theorem Proving with Scaffolded Data Synthesis and Self-Correction}, 
+        author={Yong Lin and Shange Tang and Bohan Lyu and Ziran Yang and Jui-Hui Chung and Haoyu Zhao and Lai Jiang and Yihan Geng and Jiawei Ge and Jingruo Sun and Jiayun Wu and Jiri Gesi and Ximing Lu and David Acuna and Kaiyu Yang and Hongzhou Lin and Yejin Choi and Danqi Chen and Sanjeev Arora and Chi Jin},
+        year={2025},
+        journal={arXiv preprint arXiv:2508.03613},
+        url={https://arxiv.org/abs/2508.03613}, 
+    }
 ---
 Goedel-Prover-V2 sets new state-of-the-art in automated proof generation with dramatically smaller models, using scaffolded training, self-correction, and model averaging to outperform systems 20-100x larger on key mathematical benchmarks.
