@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Superpixel-informed Continuous Low-Rank Tensor Representation for Multi-Dimensional Data Recovery"
+date:   2025-8-6 00:00:00 +00:00
+image: /images/sctr.png
+categories: research
+author: "<b>Zhizhou Wang</b>, Ruijing Zheng, Zhenyu Wu, Jianli Wang"
+authors: "<b>Zhizhou Wang</b>, Ruijing Zheng, Zhenyu Wu, Jianli Wang"
+venue: "<b>Preprint</b>"
+arxiv: 
+selected: true
+highlight: false
+# bibtex: |
+#     @inproceedings{
+#         lyu2025enhancing,
+#         title={Enhancing Large Language Model's Capabilities in Open Domains via Autonomous Tool Integration from {GitHub}},
+#         author={Bohan Lyu and Xin Cong and Heyang Yu and Pan Yang and Cheng Qian and Zihe Wang and Yujia Qin and Yining Ye and Yaxi Lu and Chen Qian and Zhong Zhang and Yukun Yan and Yankai Lin and Zhiyuan Liu and Maosong Sun},
+#         booktitle={The 63rd Annual Meeting of the Association for Computational Linguistics},
+#         year={2025},
+#         url={https://openreview.net/forum?id=cDppq8dYFA}
+#     }
+---
+A new framework, SCTR, which decomposes data into multiple semantically-consistent superpixels and learns a continuous, low-rank neural representation for each, significantly outperforming traditional methods in data recovery tasks.
