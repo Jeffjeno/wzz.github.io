@@ -6,7 +6,7 @@ image: /images/sctr.png
 categories: research
 author: "<b>Zhizhou Wang</b>, Ruijing Zheng, Zhenyu Wu, Jianli Wang"
 authors: "<b>Zhizhou Wang</b>, Ruijing Zheng, Zhenyu Wu, Jianli Wang"
-venue: "<b>Preprint</b>"
+venue: "<b>ICASSP 2026</b>"
 arxiv: https://arxiv.org/abs/2508.12261
 selected: true
 highlight: false
