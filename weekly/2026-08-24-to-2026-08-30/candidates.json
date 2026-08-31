@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "week": {
+    "start": "2026-08-24",
+    "end": "2026-08-30",
+    "date_basis": "arXiv first-submission date (UTC)"
+  },
+  "scope": {
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG",
+      "cs.CV",
+      "cs.RO",
+      "cs.HC",
+      "eess.AS"
+    ],
+    "recall_modes": [
+      "citation"
+    ]
+  },
+  "source_counts": {
+    "arxiv_unique": 2089,
+    "seed_papers": 4,
+    "by_category": {
+      "cs.CL": 456,
+      "cs.AI": 860,
+      "cs.LG": 674,
+      "cs.CV": 508,
+      "cs.RO": 194,
+      "cs.HC": 91,
+      "eess.AS": 37
+    },
+    "semantic_scholar_requested": 2093,
+    "semantic_scholar_indexed": 1706
+  },
+  "candidates": [
+    {
+      "arxiv_id": "2608.25937",
+      "title": "Candidate supply and answer selection shape the value of LLM judging in multi-agent systems",
+      "abstract": "Multi-agent systems (MAS) sometimes already have the potential to answer correctly, but still report a wrong answer. Explaining this outcome is difficult because generation, communication and final answer-selection rules usually change simultaneously. We conceptualize multi-agent reasoning as an evolutionary pipeline of candidate generation, peer communication and terminal selection, wherein consensus without quality control can exhibit patterns of memetic drift. We study two questions: (1) when an LLM judge provides effective selection pressure by supplying a signal of answer correctness for candidates generated in a multi-agent system, and (2) when using that signal improves the reported answer. To map judge reliability, we analysed 15,336 questions from MMLU-Pro, GPQA, MedXpertQA and MuSR, with Humanity's Last Exam analysed separately. To test these rules, we replayed 81,390 fixed candidate pools drawn from 16,278 questions across five benchmarks. We report three findings. (1) A correct answer is often already present among the generated candidates, but the system can still converge on and report a wrong answer. (2) Judge reliability is not a fixed trait of the model, but varies with the task, the generator and how rare the correct answer is. (3) Combining answer frequency with the judge's evaluation changed only the final answer-selection rule and raised accuracy from 63.82% to 70.82-70.95%, primarily by rescuing correct answers that were outnumbered by popular errors. In the systems studied here, the value of generating more candidates depends on whether those extra samples make correct answers present, frequent or recognisable. By isolating generation, recognition and selection, these findings establish a diagnostic basis for designing multi-agent architectures that protect generated correct answers from being lost.",
+      "authors": [
+        "Jia-Hao Ji",
+        "Sijie Li",
+        "Jiabei Cheng",
+        "Zixi She",
+        "Jin-Tai Yu",
+        "Zhiyuan Yuan"
+      ],
+      "affiliations": [],
+      "published": "2026-08-26T15:52:20Z",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "url": "https://arxiv.org/abs/2608.25937v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25937v1",
+      "summary": "Multi-agent systems (MAS) sometimes already have the potential to answer correctly, but still report a wrong answer.",
+      "topics": [
+        "agent",
+        "multi-agent"
+      ],
+      "cites_existing_papers": [
+        "papers/scaling-agent-systems.md"
+      ],
+      "matched_seeds": [
+        {
+          "arxiv_id": "2512.08296",
+          "title": "Towards a Science of Scaling Agent Systems",
+          "source": "papers/scaling-agent-systems.md"
+        }
+      ],
+      "recall_reasons": [
+        "citation"
+      ]
+    },
+    {
+      "arxiv_id": "2608.24069",
+      "title": "Poisoning Agentic Alpha: Adversarial Vulnerabilities Across Roles and Architectures in Multi-Agent Trading Systems",
+      "abstract": "LLM-based multi-agent trading systems, in which specialized agents collaborate through structured communication to produce trading decisions, are moving rapidly from research prototypes to live deployments that control real assets. The same inter-agent communication that makes them effective also exposes them: a corrupted signal can propagate to the final decision and translate into realized financial loss. Unlike prior attacks that presume privileged access to system internals, we restrict the adversary to what is practically reachable---the source data and prompts agents consume---yielding a low-barrier, and thus democratized threat model instantiated as role-specific adversaries. We present the first systematic empirical study in the financial domain to characterize how an adversarial signal enters a multi-agent trading system and how far it survives toward the decision. Along the role axis, we decompose a widely-used trading pipeline into four functional roles---Analyst, Researcher, Trader, and Risk Manager---and pair each with an attack matched to its interface. Along the structural axis, we evaluate four communication topologies under data- and agent-level attacks, using the Adversarial Signal Preservation Score (APS) as a post-hoc lens on why some designs are more robust than others. We conduct experiments across five assets, two backbones, and two target directions. A central finding is that no architecture is inherently robust. These findings provide insights for the future design of safer and more robust agentic trading systems.",
+      "authors": [
+        "CheolWon Na",
+        "Hao Ni",
+        "Lukasz Szpruch",
+        "Zhangyang Wang",
+        "Dhagash Mehta",
+        "Saurabh Nagrecha",
+        "Alejandro Lopez-Lira",
+        "Chanyeol Choi",
+        "Yongjae Lee",
+        "Jee-Hyong Lee"
+      ],
+      "affiliations": [],
+      "published": "2026-08-25T05:07:37Z",
+      "categories": [
+        "cs.AI",
+        "cs.CE",
+        "cs.CR",
+        "cs.MA"
+      ],
+      "url": "https://arxiv.org/abs/2608.24069v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24069v1",
+      "summary": "LLM-based multi-agent trading systems, in which specialized agents collaborate through structured communication to produce trading decisions, are moving rapidly from research prototypes to live deployments that control real assets.",
+      "topics": [
+        "agent",
+        "multi-agent"
+      ],
+      "cites_existing_papers": [
+        "papers/scaling-agent-systems.md"
+      ],
+      "matched_seeds": [
+        {
+          "arxiv_id": "2512.08296",
+          "title": "Towards a Science of Scaling Agent Systems",
+          "source": "papers/scaling-agent-systems.md"
+        }
+      ],
+      "recall_reasons": [
+        "citation"
+      ]
+    }
+  ]
+}
