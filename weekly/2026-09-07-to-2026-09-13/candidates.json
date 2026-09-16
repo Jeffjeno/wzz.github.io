@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "week": {
+    "start": "2026-09-07",
+    "end": "2026-09-13",
+    "date_basis": "arXiv first-submission date (UTC)"
+  },
+  "scope": {
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG",
+      "cs.CV",
+      "cs.RO",
+      "cs.HC",
+      "eess.AS"
+    ],
+    "recall_modes": [
+      "citation"
+    ]
+  },
+  "source_counts": {
+    "arxiv_unique": 2662,
+    "seed_papers": 5,
+    "by_category": {
+      "cs.CL": 517,
+      "cs.AI": 1018,
+      "cs.LG": 934,
+      "cs.CV": 606,
+      "cs.RO": 333,
+      "cs.HC": 145,
+      "eess.AS": 81
+    },
+    "semantic_scholar_requested": 2666,
+    "semantic_scholar_indexed": 2664
+  },
+  "candidates": []
+}
