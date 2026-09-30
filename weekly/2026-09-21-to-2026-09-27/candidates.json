@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "week": {
+    "start": "2026-09-21",
+    "end": "2026-09-27",
+    "date_basis": "arXiv first-submission date (UTC)"
+  },
+  "scope": {
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG",
+      "cs.CV",
+      "cs.RO",
+      "cs.HC",
+      "eess.AS"
+    ],
+    "recall_modes": [
+      "citation"
+    ]
+  },
+  "source_counts": {
+    "arxiv_unique": 3855,
+    "seed_papers": 5,
+    "by_category": {
+      "cs.CL": 635,
+      "cs.AI": 1460,
+      "cs.LG": 1434,
+      "cs.CV": 869,
+      "cs.RO": 593,
+      "cs.HC": 158,
+      "eess.AS": 147
+    },
+    "semantic_scholar_requested": 3860,
+    "semantic_scholar_indexed": 3831
+  },
+  "candidates": [
+    {
+      "arxiv_id": "2609.34017",
+      "title": "Maat: Independent Deterministic Contract-Based Governance for Multi-Agent LLM Workflows",
+      "abstract": "Large-language-model multi-agent systems (LLM-MAS) introduce a characteristic reliability problem: an error produced by one agent can be accepted as context by downstream agents and propagate across the workflow. Many proposed safeguards rely on learned or LLM-based judges whose verdicts are themselves probabilistic; we ask whether a deterministic layer can instead stop contract-detectable handoff defects. We present Maat, a runtime governance layer that validates agent-to-agent handoffs against a versioned workflow contract, or anchor, with no language model in the validation or scoring path. We evaluate it in six controlled domain workflows (6-15 agents, 522 trials) with injected data-level defects and a deterministic seven-check rubric. Version 1 reported gains in all six workflows (2.9-26.5%). A post-publication audit found that three benchmark scorers credited any early halt as a prevented defect. On paired trials where the governed run completed or halted on a finding attributable to a verified defect, the rubric score changes by +7.7% to +29.1% in five workflows and is flat in software development; model-call cost falls 17-53% where attributable halts occur early. A hand review of all 94 governed-arm halts found 35 false alarms (37%), caused by validator defects rather than model behaviour; counting those halts as failed work, the governed arm scores below the ungoverned arm in four of six workflows. The results support deterministic handoff validation for contract-expressible defects and show that validator configuration and halt attribution must themselves be tested; they do not establish universal correctness, hallucination detection, or model-independent effectiveness.",
+      "authors": [
+        "Uliana Elina"
+      ],
+      "affiliations": [],
+      "published": "2026-09-27T23:23:52Z",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "url": "https://arxiv.org/abs/2609.34017v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.34017v1",
+      "summary": "Large-language-model multi-agent systems (LLM-MAS) introduce a characteristic reliability problem: an error produced by one agent can be accepted as context by downstream agents and propagate across the workflow.",
+      "topics": [
+        "agent",
+        "multi-agent"
+      ],
+      "cites_existing_papers": [
+        "papers/scaling-agent-systems.md"
+      ],
+      "matched_seeds": [
+        {
+          "arxiv_id": "2512.08296",
+          "title": "Towards a Science of Scaling Agent Systems",
+          "source": "papers/scaling-agent-systems.md"
+        }
+      ],
+      "recall_reasons": [
+        "citation"
+      ]
+    },
+    {
+      "arxiv_id": "2609.27490",
+      "title": "WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents",
+      "abstract": "AI research agents must predict the effects of computational changes after budgeted experiments. WhatWorkedBench evaluates this experimental understanding through a delivered response surface of configuration scores. Agents inspect workflow code and buy measurements; exhaustive CPU references score conditional component effects, mean pair interactions, configuration choice, and delivery. The catalog spans 36 task conditions, 30 sources, 8 workflow families, and 1248 indexed configuration records, with 4,206 numerical controls. At eight purchased measurements plus two free anchors, pair-effect ridge selects an exact optimum on 15 of 22 sources; 13 of these cases have at least one conditional-effect error exceeding 10% of the task utility range. Shared-estimator comparisons measure acquisition and reconstruction on common observations. In a prospective typed study on 12 four-factor sources, DeepSeek Flash submits 12/12 direct tables and gains 0.147 recovery over a Gaussian process (GP) fitted to the same observations. Pro delivers 11/12 artifacts, with an all-attempt GP difference of -0.001 and a delivered-only difference of +0.063. On six prespecified new agent-evaluation sources, Flash and Pro gains are 0.149 and 0.074. In eight typed six-factor episodes, seven final tables satisfy verified code equivalences. Four fresh agents pass all six registered rules through named estimators and deliver consistent tables at 0.682 recovery versus 0.710 for separate direct-table runs. WhatWorkedBench links acquisition, inference, program structure, and delivery.",
+      "authors": [
+        "Jingjie Ning",
+        "Xueqi Li",
+        "Yibo Kong",
+        "Dongting Li"
+      ],
+      "affiliations": [],
+      "published": "2026-09-23T07:49:24Z",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "url": "https://arxiv.org/abs/2609.27490v2",
+      "pdf_url": "https://arxiv.org/pdf/2609.27490v2",
+      "summary": "AI research agents must predict the effects of computational changes after budgeted experiments.",
+      "topics": [
+        "agent"
+      ],
+      "cites_existing_papers": [
+        "papers/discovery-certification-protocol.md"
+      ],
+      "matched_seeds": [
+        {
+          "arxiv_id": "2609.09219",
+          "title": "仅凭分数无法证明发现：审计 AI 研究代理的发现认证协议",
+          "source": "papers/discovery-certification-protocol.md"
+        }
+      ],
+      "recall_reasons": [
+        "citation"
+      ]
+    },
+    {
+      "arxiv_id": "2609.33052",
+      "title": "BudgetVerify: Budget-Tiered Verification for Financial QA",
+      "abstract": "Financial question answering often requires precise numerical extraction, unit handling, and arithmetic over tables and text, but applying expensive verification uniformly wastes test-time compute. We propose BudgetVerify, a budget-tiered generator-verifier framework that routes each generated answer to one of three verification tiers: no verification, lightweight check-and-revise, or higher-cost solve-first-then-compare verification. The router is trained from offline correctness and token-cost outcomes and, at test time, selects a verification tier using information available before verification, including the question, context statistics, the generated answer, and associated generator metadata. The selected tier either returns the generated answer directly or invokes the corresponding verifier. Across six commercial and open-weight base models, BudgetVerify consistently produces more efficient accuracy-cost Pareto frontiers than fixed verification policies by selectively allocating stronger verification only when it is useful. Although absolute performance varies across models, these efficiency gains and the resulting qualitative frontier shape are consistent across generator models.",
+      "authors": [
+        "Janet Jenq",
+        "Hongda Shen"
+      ],
+      "affiliations": [],
+      "published": "2026-09-27T00:33:46Z",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "url": "https://arxiv.org/abs/2609.33052v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.33052v1",
+      "summary": "Financial question answering often requires precise numerical extraction, unit handling, and arithmetic over tables and text, but applying expensive verification uniformly wastes test-time compute.",
+      "topics": [],
+      "cites_existing_papers": [
+        "papers/variation-in-verification.md"
+      ],
+      "matched_seeds": [
+        {
+          "arxiv_id": "2509.17995",
+          "title": "Variation in Verification: Understanding Verification Dynamics in Large Language Models",
+          "source": "papers/variation-in-verification.md"
+        }
+      ],
+      "recall_reasons": [
+        "citation"
+      ]
+    }
+  ]
+}
