@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "week": {
+    "start": "2026-09-28",
+    "end": "2026-10-04",
+    "date_basis": "arXiv first-submission date (UTC)"
+  },
+  "scope": {
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG",
+      "cs.CV",
+      "cs.RO",
+      "cs.HC",
+      "eess.AS"
+    ],
+    "recall_modes": [
+      "citation"
+    ]
+  },
+  "source_counts": {
+    "arxiv_unique": 4540,
+    "seed_papers": 5,
+    "by_category": {
+      "cs.CL": 775,
+      "cs.AI": 1831,
+      "cs.LG": 1893,
+      "cs.CV": 1057,
+      "cs.RO": 552,
+      "cs.HC": 132,
+      "eess.AS": 79
+    },
+    "semantic_scholar_requested": 4545,
+    "semantic_scholar_indexed": 4258
+  },
+  "candidates": [
+    {
+      "arxiv_id": "2609.35089",
+      "title": "Can Generative AI Automate Data Extraction for Meta-Analysis? A Case Study on Intercropping Research",
+      "abstract": "Meta-analysis is the synthesis of information from multiple sources to arrive at an overarching conclusion. There is a large need for meta-analysis in agricultural research to synthesize what is known and analyze overarching patterns. Extracting data from published literature is, however, labor-intensive, time-consuming, and tedious, and is impeded by a lack of standardization in research design, units of measurement, and terminology. These challenges are particularly evident in the domain of crop species mixtures, also called intercropping. With the growing capabilities of LLMs, many recent attempts have focused on building systems and tools to automate data collection, yet rigorous assessment against human-labeled ground truth is often missing. In this research, we evaluate three LLM-based approaches---direct zero-shot prompting, a staged workflow, and a multi-agent system---with six open-weight models to extract data from the intercropping literature. The results are evaluated against the manually curated ground truth and through a downstream statistical analysis. Overall, direct zero-shot prompting is the strongest and most consistent approach, achieving the highest mean similarity-adjusted F1 of 0.577, although none of the approaches is close to fully accurate. In the downstream analysis, most model--approach combinations recover the direction of the relationship between the predictor and outcome variables, but do not estimate its magnitude accurately.",
+      "authors": [
+        "Zehao Lu",
+        "Xingguo Xiong",
+        "Wopke van der Werf",
+        "Thijs L. van der Plas",
+        "Ioannis N. Athanasiadis"
+      ],
+      "affiliations": [],
+      "published": "2026-09-28T13:04:41Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "url": "https://arxiv.org/abs/2609.35089v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.35089v1",
+      "summary": "Meta-analysis is the synthesis of information from multiple sources to arrive at an overarching conclusion.",
+      "topics": [
+        "agent",
+        "multi-agent"
+      ],
+      "cites_existing_papers": [
+        "papers/scaling-agent-systems.md"
+      ],
+      "matched_seeds": [
+        {
+          "arxiv_id": "2512.08296",
+          "title": "Towards a Science of Scaling Agent Systems",
+          "source": "papers/scaling-agent-systems.md"
+        }
+      ],
+      "recall_reasons": [
+        "citation"
+      ]
+    },
+    {
+      "arxiv_id": "2610.02951",
+      "title": "Dynamic Expert Pruning for Multi-Agent Systems",
+      "abstract": "Mixture-of-Experts (MoE) architectures scale language models efficiently by activating only a few experts per token, but the saving is confined to computation: every expert must stay resident on the accelerator, so memory bounds where these models can be deployed. Expert pruning reduces this footprint, yet existing methods are static --- a single mask, calibrated offline, is applied to the model for every subsequent request. This assumption can fail when the workload is heterogeneous, most prominently in multi-agent systems, where one backbone serves many tasks and roles at once: our analysis shows that different tasks and roles recruit different experts, while static methods assign one fixed subset to all of them. We therefore propose Dynamic Expert Pruning (DEP), which rests on a finding we establish here: an agent's system and task prompts are by themselves sufficient to identify the experts that agent and its task require, since that text already describes what the agent will do. A lightweight predictor, trained once on workflow transcripts, turns those prompts into a specialized per-request mask in a single forward pass, with no per-configuration calibration. Across diverse tasks and roles, model scales, and MoE architectures, DEP achieves better overall accuracy than static pruning and merging baselines, and generalizes to workflows unseen in training without retraining. Its margin over those baselines is largest when few experts are retained, suggesting that the role specialization inherent to multi-agent systems permits sparser serving than static pruning allows.",
+      "authors": [
+        "Jabin Koo",
+        "Soheil Abbasloo",
+        "Sungjae Lee",
+        "Jungseul Ok"
+      ],
+      "affiliations": [],
+      "published": "2026-10-02T07:45:30Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "url": "https://arxiv.org/abs/2610.02951v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02951v1",
+      "summary": "Mixture-of-Experts (MoE) architectures scale language models efficiently by activating only a few experts per token, but the saving is confined to computation: every expert must stay resident on the accelerator, so memory bounds where these models can be deployed.",
+      "topics": [
+        "agent",
+        "multi-agent"
+      ],
+      "cites_existing_papers": [
+        "papers/scaling-agent-systems.md"
+      ],
+      "matched_seeds": [
+        {
+          "arxiv_id": "2512.08296",
+          "title": "Towards a Science of Scaling Agent Systems",
+          "source": "papers/scaling-agent-systems.md"
+        }
+      ],
+      "recall_reasons": [
+        "citation"
+      ]
+    },
+    {
+      "arxiv_id": "2609.36104",
+      "title": "An Exact Generate - Transform Decomposition of Small-LLM Team Scaling Across Orchestration Architectures",
+      "abstract": "Replacing one LLM agent with a collaborating team can raise accuracy, but whether scaling the team helps, and which architecture to scale, is unclear. Sweeping eight agent orchestration architectures across five instruction-tuned 7-9B models, five short-answer benchmarks, and an executable-code benchmark up to 30 calls, we find that the returns to team scaling are sharply task-dependent: from three to thirty calls accuracy rises by up to 17 points on the two arithmetic word-problem benchmarks (GSM8K, GSMHard) but by at most four on ARC, GPQA, and MMLU, for every architecture, a split the usual task-averaged number conceals. Proposer-Critic captures the arithmetic gains, scaling steepest and, in aggregate, surpassing every other architecture at the largest budget (item-clustered intervals exclude zero), though it ranks among the weakest elsewhere, and no architecture wins across tasks. We explain these trajectories with an exact generate-transform decomposition. Partitioning any workflow into proposal coverage and a downstream transform, any accuracy change splits exactly into an extensive coverage dividend and an intensive transformation change. The decomposition diagnoses each task: arithmetic offers coverage headroom that a critic-guided transform converts, whereas the multiple-choice benchmarks either saturate in coverage or fail to convert it, and on open-ended code generative recovery nearly vanishes so accuracy tracks coverage. At equal call budgets token cost still varies 2.1x. Extra calls therefore create candidate opportunity that only some architectures, on some tasks, convert. Team scaling is a task- and architecture-specific bet, not a uniform lever.",
+      "authors": [
+        "Blaz Bertalanic",
+        "Carolina Fortuna"
+      ],
+      "affiliations": [
+        "Jožef Stefan Institute"
+      ],
+      "published": "2026-09-28T18:40:39Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "url": "https://arxiv.org/abs/2609.36104v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.36104v1",
+      "summary": "Replacing one LLM agent with a collaborating team can raise accuracy, but whether scaling the team helps, and which architecture to scale, is unclear.",
+      "topics": [
+        "agent"
+      ],
+      "cites_existing_papers": [
+        "papers/scaling-agent-systems.md"
+      ],
+      "matched_seeds": [
+        {
+          "arxiv_id": "2512.08296",
+          "title": "Towards a Science of Scaling Agent Systems",
+          "source": "papers/scaling-agent-systems.md"
+        }
+      ],
+      "recall_reasons": [
+        "citation"
+      ]
+    }
+  ]
+}
