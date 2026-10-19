@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "week": {
+    "start": "2026-10-12",
+    "end": "2026-10-18",
+    "date_basis": "arXiv first-submission date (UTC)"
+  },
+  "scope": {
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG",
+      "cs.CV",
+      "cs.RO",
+      "cs.HC",
+      "eess.AS"
+    ],
+    "recall_modes": [
+      "citation"
+    ]
+  },
+  "source_counts": {
+    "arxiv_unique": 3311,
+    "seed_papers": 5,
+    "by_category": {
+      "cs.CL": 729,
+      "cs.AI": 1233,
+      "cs.LG": 1303,
+      "cs.CV": 725,
+      "cs.RO": 436,
+      "cs.HC": 92,
+      "eess.AS": 45
+    },
+    "semantic_scholar_requested": 3316,
+    "semantic_scholar_indexed": 2714
+  },
+  "candidates": [
+    {
+      "arxiv_id": "2610.21243",
+      "title": "A Responsibility-Centered Coordination Mechanism for Decentralized Multi-Agent Systems",
+      "abstract": "Centralized orchestration provides comprehensive multi-agent coordination but creates bottlenecks in scalability, adaptability, and collective performance. Decentralized approaches alleviate these bottlenecks by distributing coordination across agents, yet often leave responsibility for delegated dependencies and failure recovery unclear. To address this gap, we propose RCM, a responsibility-centered coordination mechanism that leverages commitments to couple task delegation with explicit responsibilities of the involved parties. Through recursive delegation, agents retain their upstream responsibilities while locally orchestrating downstream commitments, thereby preserving accountability across delegation chains, creating a network of local orchestration. We operationalize this mechanism locally through responsibility-constrained decision-making and a responsibility-oriented communication protocol (RCP), enabling agents to autonomously establish, manage, and terminate commitments. As agents act in parallel, their local actions continuously evolve the commitment graph, allowing global coordination to emerge and adapt toward a shared mission without centralized control. Experiments across reasoning, coding, and executable agent environments demonstrate that RCM outperforms strong centralized and decentralized coordination baselines by up to 18.7 points in task performance and 10.2 points in Responsibility, while improving failure and harm detection without task-specific training.",
+      "authors": [
+        "Thi-Nhung Nguyen",
+        "Viet-Thanh Pham",
+        "Linhao Luo",
+        "Thuy-Trang Vu",
+        "Dinh Phung"
+      ],
+      "affiliations": [],
+      "published": "2026-10-15T04:39:57Z",
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "url": "https://arxiv.org/abs/2610.21243v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.21243v1",
+      "summary": "Centralized orchestration provides comprehensive multi-agent coordination but creates bottlenecks in scalability, adaptability, and collective performance.",
+      "topics": [
+        "agent",
+        "multi-agent"
+      ],
+      "cites_existing_papers": [
+        "papers/scaling-agent-systems.md"
+      ],
+      "matched_seeds": [
+        {
+          "arxiv_id": "2512.08296",
+          "title": "Towards a Science of Scaling Agent Systems",
+          "source": "papers/scaling-agent-systems.md"
+        }
+      ],
+      "recall_reasons": [
+        "citation"
+      ]
+    },
+    {
+      "arxiv_id": "2610.22174",
+      "title": "Mosaic: Multi-Session Agentic Reinforcement Learning",
+      "abstract": "Most existing agentic reinforcement learning methods assume single-session trajectories, where interaction proceeds within one continuously accumulated context. However, agentic techniques such as context compaction and subagent forking may produce trajectories spanning multiple sessions, creating a mismatch between the single-session training assumption and inference-time execution. Therefore, we introduce Multi-Session Agentic Reinforcement Learning, a more general setting that supports an arbitrary number of sessions within a trajectory. Under this setting, a widely adopted method is to broadcast trajectory-level advantages to all sessions, but this does not distinguish contributions from various sessions or guide session allocation within trajectories. To address this issue, we propose Mosaic, a multi-session agentic RL method with critic-free hierarchical optimization. At the trajectory level, it incorporates session-usage signals into advantage estimation. At the session level, it shapes each session's advantage according to the estimated marginal contribution. Experiments on BrowseComp with Qwen3.5-4B show that Mosaic outperforms broadcasting in both context compaction and subagent forking scenarios while using fewer sessions on average. Further analyses show that our method achieves improvements in session utility and allocation, which we suggested is a promising target for future advances in multi-session agentic RL.",
+      "authors": [
+        "Yilong Xu",
+        "Minrui Xu",
+        "Xinyu Zhou",
+        "Xiang Long",
+        "Haochen Tan",
+        "Zhijiang Guo"
+      ],
+      "affiliations": [
+        "HKUST (GZ)",
+        "HKUST"
+      ],
+      "published": "2026-10-15T16:32:44Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "url": "https://arxiv.org/abs/2610.22174v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.22174v1",
+      "summary": "Most existing agentic reinforcement learning methods assume single-session trajectories, where interaction proceeds within one continuously accumulated context.",
+      "topics": [
+        "agent",
+        "llm-rl"
+      ],
+      "cites_existing_papers": [
+        "papers/scaling-agent-systems.md"
+      ],
+      "matched_seeds": [
+        {
+          "arxiv_id": "2512.08296",
+          "title": "Towards a Science of Scaling Agent Systems",
+          "source": "papers/scaling-agent-systems.md"
+        }
+      ],
+      "recall_reasons": [
+        "citation"
+      ]
+    },
+    {
+      "arxiv_id": "2610.20959",
+      "title": "Same Context, Different Agents: A Behavioral Study of Semantic Layers, Orchestration and Compaction in Data Agents",
+      "abstract": "Answering questions over heterogeneous data means combining evidence from files, databases, documents and the web. Data agents automate this, but their success depends on context. Three context-engineering techniques (CETs) help by shaping it: semantic layers describe the data, orchestration splits work among agents, and compaction condenses interaction history. Existing studies validate each CET alone, leaving open how agent behavior shapes its effect. We present a comprehensive analysis of the three CETs, alone and combined, with seven large language models (LLMs) on 1,514 long-horizon tasks from five benchmarks, covering behavior, accuracy and cost. We find that data agents without CETs form three behavior groups: investigators, premature answerers that answer without inspecting data, and early stoppers that give up. Each CET delivers its known benefit, from more investigation to smaller prompts, but only the behavior group it matches turns that benefit into accuracy, such as premature answerers under orchestration. For investigators, the same CETs can hurt: the semantic layer stops them from looking, orchestration makes them overconfident, costing 5 percentage points, and compaction makes them repeat steps. Combining CETs yields smaller gains and losses than their sum. We derive guidance for choosing CETs by agent behavior, task demands and accuracy-cost trade-offs.",
+      "authors": [
+        "Zhivar Sourati",
+        "Marianne Menglin Liu",
+        "Zheng Wang",
+        "Rongguang Wang",
+        "Sai Ashish Somayajula",
+        "Tao Sheng",
+        "Kyu J. Han",
+        "Sujith Ravi",
+        "Dan Roth"
+      ],
+      "affiliations": [
+        "University of California San Diego",
+        "Indian Institute of Technology Hyderabad"
+      ],
+      "published": "2026-10-14T21:29:59Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "url": "https://arxiv.org/abs/2610.20959v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.20959v1",
+      "summary": "Answering questions over heterogeneous data means combining evidence from files, databases, documents and the web.",
+      "topics": [
+        "agent"
+      ],
+      "cites_existing_papers": [
+        "papers/scaling-agent-systems.md"
+      ],
+      "matched_seeds": [
+        {
+          "arxiv_id": "2512.08296",
+          "title": "Towards a Science of Scaling Agent Systems",
+          "source": "papers/scaling-agent-systems.md"
+        }
+      ],
+      "recall_reasons": [
+        "citation"
+      ]
+    },
+    {
+      "arxiv_id": "2610.20518",
+      "title": "The Wealth of Agents: Scaling Agentic AI Across Developers",
+      "abstract": "Today's agentic systems are typically designed, built, and deployed by single developers with full control over all participating agents. While this simplifies development, it limits the potential scale of agentic systems. We study multi-developer agentic systems (MDAs) which enable developers to collaboratively build agentic systems to push frontier capability beyond what any individual developer could achieve alone. We construct empirical and theoretical models of developers to compare MDAs with single-developer agentic systems (SDAs). On GAIA, a general assistant benchmark, a population of specialized developers whose individual agents do not exceed 35% accuracy reaches 70% when their agents are combined in an MDA. This MDA performs 12 percentage points above the median general-purpose SDA built with several times each specialist's development budget. Our theoretical models show how MDAs can incentivize specialization and encourage more efficient use of aggregated developer resources. Put together, our results make a preliminary case for MDAs as a new scaling axis by enabling developers with diverse capabilities and resources to advance agentic AI collaboratively.",
+      "authors": [
+        "Austin W. Hanjie",
+        "Carlos E. Jimenez",
+        "Zirui Wang",
+        "Karthik Narasimhan"
+      ],
+      "affiliations": [
+        "Princeton University"
+      ],
+      "published": "2026-10-14T17:19:11Z",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "url": "https://arxiv.org/abs/2610.20518v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.20518v1",
+      "summary": "Today's agentic systems are typically designed, built, and deployed by single developers with full control over all participating agents.",
+      "topics": [
+        "agent"
+      ],
+      "cites_existing_papers": [
+        "papers/scaling-agent-systems.md"
+      ],
+      "matched_seeds": [
+        {
+          "arxiv_id": "2512.08296",
+          "title": "Towards a Science of Scaling Agent Systems",
+          "source": "papers/scaling-agent-systems.md"
+        }
+      ],
+      "recall_reasons": [
+        "citation"
+      ]
+    }
+  ]
+}
