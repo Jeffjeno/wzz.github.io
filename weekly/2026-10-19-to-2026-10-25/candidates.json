@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "week": {
+    "start": "2026-10-19",
+    "end": "2026-10-25",
+    "date_basis": "arXiv first-submission date (UTC)"
+  },
+  "scope": {
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG",
+      "cs.CV",
+      "cs.RO",
+      "cs.HC",
+      "eess.AS"
+    ],
+    "recall_modes": [
+      "citation"
+    ]
+  },
+  "source_counts": {
+    "arxiv_unique": 2888,
+    "seed_papers": 5,
+    "by_category": {
+      "cs.CL": 592,
+      "cs.AI": 1097,
+      "cs.LG": 1047,
+      "cs.CV": 681,
+      "cs.RO": 363,
+      "cs.HC": 110,
+      "eess.AS": 60
+    },
+    "semantic_scholar_requested": 2893,
+    "semantic_scholar_indexed": 2279
+  },
+  "candidates": [
+    {
+      "arxiv_id": "2610.27574",
+      "title": "The Show-Up Attack: When Subagents Win Over Their Supervisor",
+      "abstract": "Multi-agent systems are increasingly deployed to coordinate multiple large language model (LLM) agents. However, this also creates new attack surfaces: malicious agents may have chances to exploit the coordination. In this paper, we propose and study the \\textit{show-up attack}, in which a malicious subagent manipulates the supervisor into involving it in tasks beyond its assigned scope. To evaluate this risk, we propose SUA-Arena, which implements 6 attack strategies and contains 188 test cases. Then, we evaluate 6 frontier LLMs and find that all of them are vulnerable to show-up attacks. For example, GPT-5.6-Sol as a supervisor suffers an ASR of up to 0.93. Mitigation strategies such as prompting and restricted communication fail to reduce the risk consistently. These results show that multi-agent systems need explicit mechanisms for enforcing authority boundaries.",
+      "authors": [
+        "Maosen Zhang",
+        "Jianshuo Dong",
+        "Yutong Zhang",
+        "Jie Zhang",
+        "Tianwei Zhang",
+        "Han Qiu"
+      ],
+      "affiliations": [
+        "Tsinghua University",
+        "Nanyang Technological University"
+      ],
+      "published": "2026-10-20T03:41:13Z",
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "url": "https://arxiv.org/abs/2610.27574v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.27574v1",
+      "summary": "Multi-agent systems are increasingly deployed to coordinate multiple large language model (LLM) agents.",
+      "topics": [
+        "agent",
+        "multi-agent"
+      ],
+      "cites_existing_papers": [
+        "papers/scaling-agent-systems.md"
+      ],
+      "matched_seeds": [
+        {
+          "arxiv_id": "2512.08296",
+          "title": "Towards a Science of Scaling Agent Systems",
+          "source": "papers/scaling-agent-systems.md"
+        }
+      ],
+      "recall_reasons": [
+        "citation"
+      ]
+    },
+    {
+      "arxiv_id": "2610.30074",
+      "title": "Parallel AI Agent Collaboration as Graph-Structured Distributed Block Optimization",
+      "abstract": "Parallel AI agents can produce useful local edits yet degrade a shared solution when their edits are combined. We model this coordination problem as discrete block optimization with an exactly evaluable objective and a known dependency graph. Independent sets certify compatible edits whose verified gains, measured against the same current solution, add exactly. A coordinator constructs a safe compatible candidate and can also evaluate interacting edits to capture favorable interactions. We prove that an optimal fractional coloring yields a merger that preserves a $1/χ_f(G)$ fraction of the total verified local improvement, where $χ_f(G)$ is the graph's fractional chromatic number. This guarantee is tight among mergers that select a subset of the same proposals. Under conditional local-improvement guarantees and a block error-bound condition, repeated collaboration converges geometrically in the objective gap. The rate separates task structure, agent allocation, and computation cost, yielding a linear program for agent assignment and an explicit time-cost trade-off. Code-repair experiments show that verified merging resolves conflicts between individually useful edits that cause naive merging to fail. On larger conflict-free tasks, parallel agents reduce modeled completion time at higher input-token-equivalent cost. On three public road networks, fractional integration retains 922 units of verified graph-cut improvement across 90 paired runs. For route-search agents sharing exclusive access to vehicle routes, fractional scheduling reduces measured wall time by a median of 15% across twelve paired runs, with route-cost changes varying across runs.",
+      "authors": [
+        "Hanmin Li",
+        "Yury Demidovich",
+        "Peter Richtárik"
+      ],
+      "affiliations": [
+        "King Abdullah University of Science and Technology"
+      ],
+      "published": "2026-10-21T17:27:17Z",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "math.OC"
+      ],
+      "url": "https://arxiv.org/abs/2610.30074v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30074v1",
+      "summary": "Parallel AI agents can produce useful local edits yet degrade a shared solution when their edits are combined.",
+      "topics": [
+        "agent"
+      ],
+      "cites_existing_papers": [
+        "papers/scaling-agent-systems.md"
+      ],
+      "matched_seeds": [
+        {
+          "arxiv_id": "2512.08296",
+          "title": "Towards a Science of Scaling Agent Systems",
+          "source": "papers/scaling-agent-systems.md"
+        }
+      ],
+      "recall_reasons": [
+        "citation"
+      ]
+    }
+  ]
+}
