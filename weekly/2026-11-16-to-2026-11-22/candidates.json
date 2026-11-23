@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "week": {
+    "start": "2026-11-16",
+    "end": "2026-11-22",
+    "date_basis": "arXiv first-submission date (UTC)"
+  },
+  "scope": {
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG",
+      "cs.CV",
+      "cs.RO",
+      "cs.HC",
+      "eess.AS"
+    ],
+    "recall_modes": [
+      "citation"
+    ]
+  },
+  "source_counts": {
+    "arxiv_unique": 2890,
+    "seed_papers": 5,
+    "by_category": {
+      "cs.CL": 426,
+      "cs.AI": 1075,
+      "cs.LG": 965,
+      "cs.CV": 947,
+      "cs.RO": 428,
+      "cs.HC": 103,
+      "eess.AS": 19
+    },
+    "semantic_scholar_requested": 2895,
+    "semantic_scholar_indexed": 2364
+  },
+  "candidates": [
+    {
+      "arxiv_id": "2611.22245",
+      "title": "Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents",
+      "abstract": "Multi-agent delegation lets LLM systems distribute evidence collection across workers with separate contexts. This creates a consistency challenge: facts retrieved by workers may be missing from the evidence available to the lead for a joint conclusion. We introduce a benchmark and evidence-flow profiler for studying multi-agent memory inconsistency through controlled factual conflicts in Harvey LAB document-review tasks. Pooled across three models with comparable generation spending, requiring delegation increases retrieval of both conflicting claims from 50.2% to 68.7% relative to single-agent execution, yet conflict detection falls from 16.2% to 13.2%. Within this setting, workers report both claims for only 35.2% of retrieved pairs, and pooled matched comparisons show higher detection than single-agent execution when one worker reads both claims but lower detection when the claims are split across workers. Worker-to-lead handoffs are a central target for improving conflict detection in multi-agent LLMs.",
+      "authors": [
+        "Hejia Zhang",
+        "Zhongming Yu",
+        "Yimin Ding",
+        "Wei-Ting Chen",
+        "Hengjia Yu",
+        "Wentao Ni",
+        "Yijun Liu",
+        "Cong Xu",
+        "Xin Chen",
+        "Matrix Yao",
+        "Fan Zhao",
+        "Jishen Zhao"
+      ],
+      "affiliations": [
+        "Intel (United States)",
+        "University of California San Diego",
+        "Hewlett Packard Enterprise (United States)"
+      ],
+      "published": "2026-11-17T05:47:01Z",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "url": "https://arxiv.org/abs/2611.22245v2",
+      "pdf_url": "https://arxiv.org/pdf/2611.22245v2",
+      "summary": "Multi-agent delegation lets LLM systems distribute evidence collection across workers with separate contexts.",
+      "topics": [
+        "agent",
+        "memory",
+        "multi-agent"
+      ],
+      "cites_existing_papers": [
+        "papers/scaling-agent-systems.md"
+      ],
+      "matched_seeds": [
+        {
+          "arxiv_id": "2512.08296",
+          "title": "Towards a Science of Scaling Agent Systems",
+          "source": "papers/scaling-agent-systems.md"
+        }
+      ],
+      "recall_reasons": [
+        "citation"
+      ]
+    },
+    {
+      "arxiv_id": "2611.26346",
+      "title": "Context as a Resource",
+      "abstract": "Managing concurrent tasks across separate agent sessions quickly exhausts human attention, motivating always-on personal agents behind a single continuous interface. Yet when every context shares identical frozen backbone weights, funneling interleaved dialogues and external events into one linear session induces cross-topic constraint bleed and head-of-line stalling. Conversely, router-ticket hierarchies incur lossy prose handoffs, heavy routing overhead, and blind merges - collapsing true-conflict repository merges to a 33.3% three-run mean despite high isolated branch passes. Rather than scheduling anthropomorphic roles, we introduce ClonAct, a routerless architecture that virtualizes context blocks directly through a pluggable single-pass non-generative Context MMU, in-place Context Cells, a footprint-aware Synaptic Bus with an isolated trial merge gate, and a wave-flushed Shared Trunk. Across three programmatic multi-stream benchmarks and three model families, our portable trial merge gate lifts true-conflict merges to 63.3%, while ClonAct's routerless virtualization attains this ceiling with 45.9% fewer prompt tokens and prevents compact-model router collapse. Under continuous surge streams, ClonAct matches top completion (95.0%) with the lowest median wait and zero timed-out status checks.",
+      "authors": [
+        "Xufei Tian",
+        "Han Hu",
+        "Wenli Du"
+      ],
+      "affiliations": [],
+      "published": "2026-11-19T16:19:56Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "url": "https://arxiv.org/abs/2611.26346v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.26346v1",
+      "summary": "Managing concurrent tasks across separate agent sessions quickly exhausts human attention, motivating always-on personal agents behind a single continuous interface.",
+      "topics": [
+        "agent"
+      ],
+      "cites_existing_papers": [
+        "papers/scaling-agent-systems.md"
+      ],
+      "matched_seeds": [
+        {
+          "arxiv_id": "2512.08296",
+          "title": "Towards a Science of Scaling Agent Systems",
+          "source": "papers/scaling-agent-systems.md"
+        }
+      ],
+      "recall_reasons": [
+        "citation"
+      ]
+    },
+    {
+      "arxiv_id": "2611.22835",
+      "title": "When Passing Checks Do Not Establish Completion: Evidence Interpretation in Coding Agents",
+      "abstract": "Verification procedures in coding agents must preserve execution facts, interpret their scope and discharge checking obligations. We study these responsibilities through qualified repository checks, controlled evidence consumers and executable workflows. A prospective thirteen-task factorial study finds that correct reported facts need not yield the requested finite verdict. Conversely, all 122 delivered labels in a held-out receipt-supply study are correct, while sixteen responses misreport facts and eleven others exceed authorized scope. Production repair supplies successful controls and finite-supported preservation failures. Across 118 repair episodes on 31 tasks, source interventions separate startup reachability from repair and witness production from the claimed operation. Lifetime and resource controls delimit what passing validation establishes. Generated-note comparisons yield local repair differences but can state false explanations; strong ordinary baselines, new tasks and Skill-transfer studies supply no consistent overall advantage. These results characterize evidence interpretation, applicability and fulfilled actions while limiting claims of general diagnostic superiority, Skill deterioration or deployed folding effects.",
+      "authors": [
+        "Xueping Gao"
+      ],
+      "affiliations": [
+        "Alibaba Group (China)"
+      ],
+      "published": "2026-11-17T14:17:43Z",
+      "categories": [
+        "cs.CL",
+        "cs.SE"
+      ],
+      "url": "https://arxiv.org/abs/2611.22835v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22835v1",
+      "summary": "Verification procedures in coding agents must preserve execution facts, interpret their scope and discharge checking obligations.",
+      "topics": [
+        "agent"
+      ],
+      "cites_existing_papers": [
+        "papers/scaling-agent-systems.md"
+      ],
+      "matched_seeds": [
+        {
+          "arxiv_id": "2512.08296",
+          "title": "Towards a Science of Scaling Agent Systems",
+          "source": "papers/scaling-agent-systems.md"
+        }
+      ],
+      "recall_reasons": [
+        "citation"
+      ]
+    }
+  ]
+}
